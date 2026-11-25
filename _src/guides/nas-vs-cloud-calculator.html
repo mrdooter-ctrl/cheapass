@@ -1,0 +1,38 @@
+<!-- {"title": "NAS vs cloud storage cost calculator | CheapAss", "description": "Is a home NAS cheaper than cloud storage for you? Enter your numbers: box, drives, power, cloud price. Get the break-even year."} -->
+<h1>NAS or cloud: which is cheaper for you?</h1>
+<p class="tag">Plug in your numbers. The math does the arguing.</p>
+<p>A NAS costs a lot on day one and a little every month after. Cloud costs a little every month forever. Somewhere they cross. This finds where.</p>
+<h2>Your NAS</h2>
+<label>NAS box price ($) <input id="box" type="number" value="300" min="0"></label>
+<label>Number of drives <input id="drives" type="number" value="2" min="1"></label>
+<label>Price per drive ($) <input id="dprice" type="number" value="200" min="0"></label>
+<label>Usable space (TB) <input id="tb" type="number" value="8" min="0.5" step="0.5"></label>
+<label>Power draw with drives (watts) <input id="watts" type="number" value="25" min="0"></label>
+<label>Electricity price ($ per kWh, check your bill) <input id="kwh" type="number" value="0.17" min="0" step="0.01"></label>
+<h2>The cloud plan you're comparing</h2>
+<label>Price per TB per month ($) <input id="cloud" type="number" value="6" min="0" step="0.5"></label>
+<p><small>The defaults are examples, not quotes. Enter real prices from <a href="cheap-nas.html">the NAS list</a>, <a href="nas-hard-drives.html">the drive list</a> and the cloud plan you're looking at.</small></p>
+<h2>Result</h2>
+<div class="out" id="out">Enter your numbers.</div>
+<p><small>Leaves out drive replacements (budget one every few years) and your time. A NAS still needs one copy off-site. See <a href="budget-3-2-1-backup.html">the cheap 3-2-1 setup</a>.</small></p>
+<script>
+(function(){
+ var ids=["box","drives","dprice","tb","watts","kwh","cloud"];
+ function v(id){var x=parseFloat(document.getElementById(id).value);return isNaN(x)?0:x;}
+ function money(x){return "$"+Math.round(x).toLocaleString();}
+ function calc(){
+  var upfront=v("box")+v("drives")*v("dprice");
+  var powerYr=v("watts")*24*365/1000*v("kwh");
+  var cloudYr=v("tb")*v("cloud")*12;
+  var o=document.getElementById("out"), s="";
+  s+="NAS up front: <b>"+money(upfront)+"</b>, then about <b>"+money(powerYr)+"</b> a year in power.<br>";
+  s+="Cloud for "+v("tb")+" TB: about <b>"+money(cloudYr)+"</b> a year.<br>";
+  if(cloudYr<=powerYr){s+="Cloud is cheaper every year. Skip the NAS unless you want it for other reasons.";}
+  else{var yrs=upfront/(cloudYr-powerYr);
+   s+= yrs<=10 ? "The NAS pays for itself in about <b>"+yrs.toFixed(1)+" years</b>." : "The NAS takes over 10 years to pay off. Cloud wins on price.";}
+  o.innerHTML=s;
+ }
+ ids.forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
+ calc();
+})();
+</script>

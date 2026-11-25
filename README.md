@@ -1,7 +1,7 @@
 # CheapAss
 
-Homelab NAS enclosure and mini-PC deals, with affiliate links.
+Homelab mini PC and NAS deals, with buying guides.
 
 Live site: https://mrdooter-ctrl.github.io/cheapass/
 
-Current page: UGREEN Black Friday / Cyber Monday NAS deals.
+Page text lives in _src/, prices in data/. tools/build.py builds the pages; a daily GitHub Action refreshes prices and rebuilds.

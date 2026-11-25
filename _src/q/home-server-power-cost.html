@@ -1,0 +1,23 @@
+<!-- {"title": "What does a home server cost to run 24/7? | CheapAss", "description": "The electricity math for a mini PC or NAS left on all year, with a calculator. Usually less than one streaming subscription."} -->
+<h1>What does a home server cost to run 24/7?</h1>
+<p class="tag">Usually less than one streaming subscription. Do the math once and stop wondering.</p>
+<h2>The formula</h2>
+<p>Watts x 24 x 365 / 1000 = kWh per year. Multiply by the rate on your electric bill.</p>
+<p>Example: a box that averages 15 watts uses about 131 kWh a year. At 17 cents per kWh, that's about $22 a year.</p>
+<h2>Your numbers</h2>
+<label>Average watts <input id="w" type="number" value="15" min="0"></label>
+<label>Price per kWh, in dollars <input id="r" type="number" value="0.17" step="0.01" min="0"></label>
+<p class="out" id="o"></p>
+<script>
+function calc(){var w=+document.getElementById('w').value||0,r=+document.getElementById('r').value||0;var k=w*24*365/1000;document.getElementById('o').textContent='About '+k.toFixed(0)+' kWh a year: about $'+(k*r).toFixed(0)+' a year, or $'+(k*r/12).toFixed(2)+' a month.';}
+document.getElementById('w').oninput=calc;document.getElementById('r').oninput=calc;calc();
+</script>
+<h2>Where the watts come from</h2>
+<ul>
+<li><b>Idle is what counts.</b> A home server spends most of its life doing nothing. The idle number matters more than the maximum on the box.</li>
+<li><b>Hard drives add up.</b> Each spinning drive adds a few watts. SSDs add very little.</li>
+<li><b>Measure it.</b> A plug-in power meter costs less than a month of guessing.</li>
+</ul>
+<h2>Mini PCs we track</h2>
+{{TABLE:minipc}}
+<p><small>More: <a href="nas-or-mini-pc.html">NAS or mini PC?</a></small></p>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NAS vs cloud storage cost calculator | CheapAss</title>
+<meta name="description" content="Is a home NAS cheaper than cloud storage for you? Enter your numbers: box, drives, power, cloud price. Get the break-even year.">
+<link rel="canonical" href="https://mrdooter-ctrl.github.io/cheapass/guides/nas-vs-cloud-calculator.html">
+<style>
+body{font-family:Georgia,serif;max-width:780px;margin:0 auto;padding:16px;background:#fff;color:#111;line-height:1.5}
+h1{font-size:1.6em;margin:.2em 0} h2{font-size:1.2em;margin-top:1.6em} .tag{color:#555;margin:2px 0 12px}
+.brand{font-weight:bold;color:#111;text-decoration:none} nav{font-size:.9em;margin-bottom:8px;line-height:1.9} nav a{margin-right:10px}
+.note{background:#ffffcc;border:1px solid #cc9;padding:8px;font-size:.9em} .sale{background:#111;color:#fff;padding:8px 10px;font-weight:bold}
+.wrap{overflow-x:auto} table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.95em}
+td,th{border-bottom:1px solid #ddd;padding:6px 4px;text-align:left;vertical-align:top} th{font-size:.85em;color:#555}
+.was{color:#888;text-decoration:line-through} .pct{color:#060;font-weight:bold} a{color:#00c} small{color:#666}
+label{display:block;margin:6px 0} input{font:inherit;width:7em} .out{font-size:1.1em;background:#f4f4f4;padding:8px}
+@media (prefers-color-scheme: dark){body{background:#111;color:#eee}.brand{color:#eee}.sale{background:#eee;color:#111}.note{background:#332;border-color:#665}td,th{border-color:#333}a{color:#8af}.tag,th,small{color:#aaa}.out{background:#222}input{background:#222;color:#eee;border:1px solid #555}}
+</style>
+</head>
+<body>
+<nav><a class="brand" href="../index.html">CheapAss</a> <a href="../deals/gmktec.html">GMKtec</a><a href="../deals/beelink.html">Beelink</a><a href="../deals/unifydrive.html">UnifyDrive</a><a href="../guides/cheap-nas.html">NAS guide</a><a href="../guides/mini-pc-homelab.html">Mini PC guide</a><a href="../guides/index.html">All guides</a></nav>
+
+<h1>NAS or cloud: which is cheaper for you?</h1>
+<p class="tag">Plug in your numbers. The math does the arguing.</p>
+<p>A NAS costs a lot on day one and a little every month after. Cloud costs a little every month forever. Somewhere they cross. This finds where.</p>
+<h2>Your NAS</h2>
+<label>NAS box price ($) <input id="box" type="number" value="300" min="0"></label>
+<label>Number of drives <input id="drives" type="number" value="2" min="1"></label>
+<label>Price per drive ($) <input id="dprice" type="number" value="200" min="0"></label>
+<label>Usable space (TB) <input id="tb" type="number" value="8" min="0.5" step="0.5"></label>
+<label>Power draw with drives (watts) <input id="watts" type="number" value="25" min="0"></label>
+<label>Electricity price ($ per kWh, check your bill) <input id="kwh" type="number" value="0.17" min="0" step="0.01"></label>
+<h2>The cloud plan you're comparing</h2>
+<label>Price per TB per month ($) <input id="cloud" type="number" value="6" min="0" step="0.5"></label>
+<p><small>The defaults are examples, not quotes. Enter real prices from <a href="cheap-nas.html">the NAS list</a>, <a href="nas-hard-drives.html">the drive list</a> and the cloud plan you're looking at.</small></p>
+<h2>Result</h2>
+<div class="out" id="out">Enter your numbers.</div>
+<p><small>Leaves out drive replacements (budget one every few years) and your time. A NAS still needs one copy off-site. See <a href="budget-3-2-1-backup.html">the cheap 3-2-1 setup</a>.</small></p>
+<script>
+(function(){
+ var ids=["box","drives","dprice","tb","watts","kwh","cloud"];
+ function v(id){var x=parseFloat(document.getElementById(id).value);return isNaN(x)?0:x;}
+ function money(x){return "$"+Math.round(x).toLocaleString();}
+ function calc(){
+  var upfront=v("box")+v("drives")*v("dprice");
+  var powerYr=v("watts")*24*365/1000*v("kwh");
+  var cloudYr=v("tb")*v("cloud")*12;
+  var o=document.getElementById("out"), s="";
+  s+="NAS up front: <b>"+money(upfront)+"</b>, then about <b>"+money(powerYr)+"</b> a year in power.<br>";
+  s+="Cloud for "+v("tb")+" TB: about <b>"+money(cloudYr)+"</b> a year.<br>";
+  if(cloudYr<=powerYr){s+="Cloud is cheaper every year. Skip the NAS unless you want it for other reasons.";}
+  else{var yrs=upfront/(cloudYr-powerYr);
+   s+= yrs<=10 ? "The NAS pays for itself in about <b>"+yrs.toFixed(1)+" years</b>." : "The NAS takes over 10 years to pay off. Cloud wins on price.";}
+  o.innerHTML=s;
+ }
+ ids.forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
+ calc();
+})();
+</script>
+
+<hr>
+<p><small>CheapAss is a one-person deal list. No sponsored rankings. If a deal dies, it comes off the page. Page built 2026-11-25.</small></p>
+</body>
+</html>

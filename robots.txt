@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mrdooter-ctrl.github.io/cheapass/sitemap.xml

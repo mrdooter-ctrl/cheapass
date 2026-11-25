@@ -1,0 +1,395 @@
+{
+ "_readme": "One row per product. refresh_prices.py updates price/was/checked/url for source=shopify rows. Manual rows (source=manual) are checked by hand once a month. Never invent a price: leave price null and the page shows a link instead.",
+ "items": [
+  {
+   "id": "unifydrive-uc250",
+   "group": "nas",
+   "brand": "UnifyDrive",
+   "name": "UnifyDrive UC250",
+   "source": "shopify",
+   "feed": "https://www.unifydrive.com",
+   "match": "unifydrive-uc250",
+   "cols": {
+    "Storage": "2 drive bays + 2 NVMe",
+    "Chip": "Intel N150",
+    "Network": "2.5GbE"
+   },
+   "note": "The cheap 2-bay with a real Intel chip. Plex-capable. Drives not included.",
+   "price": 349.0,
+   "was": 399.0,
+   "checked": "2026-11-24",
+   "url": "https://www.unifydrive.com/products/unifydrive-uc250"
+  },
+  {
+   "id": "unifydrive-ut2",
+   "group": "nas",
+   "brand": "UnifyDrive",
+   "name": "UnifyDrive UT2 (portable)",
+   "source": "shopify",
+   "feed": "https://www.unifydrive.com",
+   "match": "unifydrive-ut2-copy",
+   "cols": {
+    "Storage": "2 NVMe SSD slots",
+    "Chip": "Rockchip RK3588C",
+    "Network": "2.5GbE + Wi-Fi 6"
+   },
+   "note": "A NAS with a battery built in. For photo shoots and travel, not a media library.",
+   "price": 299.0,
+   "was": 599.0,
+   "checked": "2026-11-24",
+   "url": "https://www.unifydrive.com/products/unifydrive-ut2-copy"
+  },
+  {
+   "id": "unifydrive-uc450pro",
+   "group": "nas",
+   "brand": "UnifyDrive",
+   "name": "UnifyDrive UC450 Pro",
+   "source": "shopify",
+   "feed": "https://www.unifydrive.com",
+   "match": "unifydrive-uc450-pro",
+   "cols": {
+    "Storage": "4 drive bays + 4 NVMe",
+    "Chip": "Intel Core Ultra 5 225H",
+    "Network": "10GbE"
+   },
+   "note": "Serious box. Overkill for most homes, right for a big library.",
+   "price": 1449.0,
+   "was": 1499.0,
+   "checked": "2026-11-24",
+   "url": "https://www.unifydrive.com/products/unifydrive-uc450-pro"
+  },
+  {
+   "id": "beelink-me-mini",
+   "group": "nas",
+   "brand": "Beelink",
+   "name": "Beelink ME mini (6 SSD slots)",
+   "source": "shopify",
+   "feed": "https://www.bee-link.com",
+   "match": "beelink-me-mini-n150",
+   "cols": {
+    "Storage": "6 NVMe SSD slots",
+    "Chip": "Intel N-series",
+    "Network": "2.5GbE"
+   },
+   "note": "A tiny, silent all-SSD NAS. US stock was not confirmed, so check the page.",
+   "price": null,
+   "was": null,
+   "checked": null,
+   "url": "https://www.bee-link.com/products/beelink-me-mini-n150"
+  },
+  {
+   "id": "gmktec-kb2max",
+   "group": "minipc",
+   "brand": "GMKtec",
+   "name": "GMKtec NucBox KB2 Max (barebone)",
+   "source": "shopify",
+   "feed": "https://www.gmktec.com",
+   "match": "gmktec-nucbox-kb2-max-mini-pc-intel®-11th-i5-11320h",
+   "cols": {
+    "CPU": "Intel i5-11320H",
+    "Comes with": "No RAM or SSD"
+   },
+   "note": "Cheapest real Intel box here. Bring your own RAM and SSD.",
+   "price": 239.99,
+   "was": null,
+   "checked": "2026-11-24",
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-kb2-max-mini-pc-intel®-11th-i5-11320h"
+  },
+  {
+   "id": "gmktec-g3ultra",
+   "group": "minipc",
+   "brand": "GMKtec",
+   "name": "GMKtec NucBox G3 Ultra",
+   "source": "shopify",
+   "feed": "https://www.gmktec.com",
+   "match": "gmktec-nucbox-g3-ultra-mini-pc-intel-pentium-gold-7505",
+   "cols": {
+    "CPU": "Intel Pentium Gold 7505",
+    "Comes with": "16GB + 256GB"
+   },
+   "note": "Ready to go. Fine for Home Assistant, Pi-hole and light Plex.",
+   "price": 269.99,
+   "was": 369.99,
+   "checked": "2026-11-24",
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-g3-ultra-mini-pc-intel-pentium-gold-7505"
+  },
+  {
+   "id": "gmktec-m3pro",
+   "group": "minipc",
+   "brand": "GMKtec",
+   "name": "GMKtec NucBox M3 Pro (barebone)",
+   "source": "shopify",
+   "feed": "https://www.gmktec.com",
+   "match": "gmktec-nucbox-m3-pro-mini-pc-intel-core-i5-13500h",
+   "cols": {
+    "CPU": "Intel i5-13500H",
+    "Comes with": "No RAM or SSD"
+   },
+   "note": "A lot of CPU for the money if you have spare RAM.",
+   "price": 329.99,
+   "was": null,
+   "checked": "2026-11-24",
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-m3-pro-mini-pc-intel-core-i5-13500h"
+  },
+  {
+   "id": "gmktec-m3s",
+   "group": "minipc",
+   "brand": "GMKtec",
+   "name": "GMKtec M3S",
+   "source": "shopify",
+   "feed": "https://www.gmktec.com",
+   "match": "gmktec-m3s-intel-core-3-304-mini-pc",
+   "cols": {
+    "CPU": "Intel Core 3 304",
+    "Comes with": "12GB + 256GB"
+   },
+   "note": "Newer Intel chip. Check the RAM is enough for your VMs.",
+   "price": 389.99,
+   "was": 519.99,
+   "checked": "2026-11-24",
+   "url": "https://www.gmktec.com/products/gmktec-m3s-intel-core-3-304-mini-pc"
+  },
+  {
+   "id": "gmktec-m10",
+   "group": "minipc",
+   "brand": "GMKtec",
+   "name": "GMKtec M10",
+   "source": "shopify",
+   "feed": "https://www.gmktec.com",
+   "match": "gmktec-m10-amd-ryzen-5-6600h-mini-pc",
+   "cols": {
+    "CPU": "AMD Ryzen 5 6600H",
+    "Comes with": "24GB + 512GB"
+   },
+   "note": "The Proxmox pick. More cores and RAM for several VMs.",
+   "price": 459.99,
+   "was": 599.99,
+   "checked": "2026-11-24",
+   "url": "https://www.gmktec.com/products/gmktec-m10-amd-ryzen-5-6600h-mini-pc"
+  },
+  {
+   "id": "beelink-eqi",
+   "group": "minipc",
+   "brand": "Beelink",
+   "name": "Beelink EQi",
+   "source": "shopify",
+   "feed": "https://www.bee-link.com",
+   "match": "beelink-eqi-wildcat-lake",
+   "cols": {
+    "CPU": "Intel Core 3 304",
+    "Comes with": "16GB + 512GB"
+   },
+   "note": "Same chip as the GMKtec M3S with more RAM and storage.",
+   "price": 509.0,
+   "was": 629.0,
+   "checked": "2026-11-24",
+   "url": "https://www.bee-link.com/products/beelink-eqi-wildcat-lake"
+  },
+  {
+   "id": "beelink-eqi-pro",
+   "group": "minipc",
+   "brand": "Beelink",
+   "name": "Beelink EQi Pro",
+   "source": "shopify",
+   "feed": "https://www.bee-link.com",
+   "match": "beelink-eqi-pro-openclaw-pre-installed",
+   "cols": {
+    "CPU": "AMD Ryzen 7 7735HS",
+    "Comes with": "24GB + 1TB, Ubuntu"
+   },
+   "note": "Two 2.5GbE ports. A good router or firewall box too.",
+   "price": 629.0,
+   "was": 799.0,
+   "checked": "2026-11-24",
+   "url": "https://www.bee-link.com/products/beelink-eqi-pro-openclaw-pre-installed"
+  },
+  {
+   "id": "wd-red-plus-4tb",
+   "group": "hdd",
+   "name": "WD Red Plus 4TB (WD40EFPX)",
+   "source": "manual",
+   "tb": 4,
+   "cols": {
+    "Line": "Red Plus",
+    "RPM": "5400 class",
+    "Cache": "256MB"
+   },
+   "note": "Small, quiet, cheap per drive. Bad price per TB.",
+   "price": null,
+   "was": null,
+   "checked": null,
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd"
+  },
+  {
+   "id": "wd-red-plus-8tb",
+   "group": "hdd",
+   "name": "WD Red Plus 8TB (WD80EFPX)",
+   "source": "manual",
+   "tb": 8,
+   "cols": {
+    "Line": "Red Plus",
+    "RPM": "5400 class",
+    "Cache": "256MB"
+   },
+   "note": "The usual sweet spot for a 2-bay mirror.",
+   "price": null,
+   "was": null,
+   "checked": null,
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd"
+  },
+  {
+   "id": "wd-red-plus-12tb",
+   "group": "hdd",
+   "name": "WD Red Plus 12TB (WD120EFBX)",
+   "source": "manual",
+   "tb": 12,
+   "cols": {
+    "Line": "Red Plus",
+    "RPM": "7200",
+    "Cache": "256MB"
+   },
+   "note": "Biggest Red Plus. Louder than the small ones.",
+   "price": null,
+   "was": null,
+   "checked": null,
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd"
+  },
+  {
+   "id": "wd-red-pro-16tb",
+   "group": "hdd",
+   "name": "WD Red Pro 16TB",
+   "source": "manual",
+   "tb": 16,
+   "cols": {
+    "Line": "Red Pro",
+    "RPM": "7200",
+    "Cache": "512MB"
+   },
+   "note": "Where price per TB usually starts to drop.",
+   "price": null,
+   "was": null,
+   "checked": null,
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd"
+  },
+  {
+   "id": "wd-red-pro-20tb",
+   "group": "hdd",
+   "name": "WD Red Pro 20TB",
+   "source": "manual",
+   "tb": 20,
+   "cols": {
+    "Line": "Red Pro",
+    "RPM": "7200",
+    "Cache": "512MB"
+   },
+   "note": "Fewer bays needed for the same space.",
+   "price": null,
+   "was": null,
+   "checked": null,
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd"
+  },
+  {
+   "id": "wd-red-pro-24tb",
+   "group": "hdd",
+   "name": "WD Red Pro 24TB",
+   "source": "manual",
+   "tb": 24,
+   "cols": {
+    "Line": "Red Pro",
+    "RPM": "7200",
+    "Cache": "512MB"
+   },
+   "note": "Only if a drive failure and a long rebuild don't scare you.",
+   "price": null,
+   "was": null,
+   "checked": null,
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd"
+  },
+  {
+   "id": "pcloud-500",
+   "group": "cloud",
+   "name": "pCloud Premium 500GB, lifetime",
+   "source": "manual",
+   "tb": 0.5,
+   "kind": "lifetime",
+   "cols": {
+    "Pay": "Once",
+    "Covers": "Files you upload"
+   },
+   "note": "Pay once. Small. Good for documents and photos, not a NAS.",
+   "price": 219,
+   "was": 279,
+   "checked": "2026-11-24",
+   "url": "https://www.pcloud.com/cloud-storage-pricing-plans.html"
+  },
+  {
+   "id": "pcloud-2tb",
+   "group": "cloud",
+   "name": "pCloud Premium Plus 2TB, lifetime",
+   "source": "manual",
+   "tb": 2,
+   "kind": "lifetime",
+   "cols": {
+    "Pay": "Once",
+    "Covers": "Files you upload"
+   },
+   "note": "Pays for itself in about five years against $99 a year.",
+   "price": 499,
+   "was": 709,
+   "checked": "2026-11-24",
+   "url": "https://www.pcloud.com/cloud-storage-pricing-plans.html"
+  },
+  {
+   "id": "pcloud-10tb",
+   "group": "cloud",
+   "name": "pCloud Ultra 10TB, lifetime",
+   "source": "manual",
+   "tb": 10,
+   "kind": "lifetime",
+   "cols": {
+    "Pay": "Once",
+    "Covers": "Files you upload"
+   },
+   "note": "Lowest price per TB here if you keep it long enough.",
+   "price": 1499,
+   "was": 2799,
+   "checked": "2026-11-24",
+   "url": "https://www.pcloud.com/cloud-storage-pricing-plans.html"
+  },
+  {
+   "id": "backblaze-personal",
+   "group": "cloud",
+   "name": "Backblaze Personal Backup",
+   "source": "manual",
+   "tb": null,
+   "kind": "yearly",
+   "cols": {
+    "Pay": "Per year",
+    "Covers": "One computer, unlimited"
+   },
+   "note": "Unlimited backup of one computer. Not for a NAS.",
+   "price": 99,
+   "was": null,
+   "checked": "2026-11-24",
+   "url": "https://www.backblaze.com/cloud-backup/pricing"
+  }
+ ],
+ "_awin": {
+  "_readme": "Fill affid with the publisher ID from Awin once approved. Set approved true per brand only after Awin approves that brand. Until then pages link to the store with no tracking.",
+  "affid": "",
+  "brands": {
+   "GMKtec": {
+    "mid": "45751",
+    "approved": false
+   },
+   "Beelink": {
+    "mid": "34449",
+    "approved": false
+   },
+   "UnifyDrive": {
+    "mid": "",
+    "approved": false
+   }
+  }
+ }
+}
