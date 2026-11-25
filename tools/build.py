@@ -62,6 +62,7 @@ class Ctx:
     def __init__(self):
         cat = load("catalog.json")
         self.items, self.awin = cat["items"], cat.get("_awin", {})
+        self.amazon_tag = cat.get("_amazon", {}).get("tag", "")
         self.links = load("links.json", {})
         self.site = load("site.json", {})
 
@@ -80,6 +81,13 @@ class Ctx:
         u, aff = self.url(it)
         rel = "sponsored nofollow" if aff else "nofollow"
         return f'<a href="{html.escape(u)}" rel="{rel}">{html.escape(text)}</a>'
+
+
+    def amazon(self, it):
+        if not (self.amazon_tag and it.get("amazon")):
+            return ""
+        u = "https://www.amazon.com/s?" + urllib.parse.urlencode({"k": it["amazon"], "tag": self.amazon_tag})
+        return f'<br><small><a href="{html.escape(u)}" rel="sponsored nofollow">Check Amazon</a></small>'
 
 
 def price_cell(c, it):
@@ -103,7 +111,7 @@ def table(c, rows, mode=None, show_cols=True):
         + (["Per year, kept 5 yrs"] if mode == "cloud" else []) + cols + ["Why it's here"]
     out = ['<div class="wrap"><table>', "<tr>" + "".join(f"<th>{h}</th>" for h in head) + "</tr>"]
     for i in rows:
-        cells = [c.link(i, i["name"]), price_cell(c, i)]
+        cells = [c.link(i, i["name"]) + c.amazon(i), price_cell(c, i)]
         if mode == "pertb":
             cells.append(f"${i['price']/i['tb']:,.2f}" if fresh(i) else "-")
         if mode == "cloud":
@@ -162,7 +170,8 @@ def build_page(c, src):
         disclosure = ('<p class="note">Some links on this page may be affiliate links. If you buy '
                       'through them, CheapAss may earn a commission at no extra cost to you. '
                       f'Prices last checked: <b>{checked or "not yet"}</b> on each brand\'s own US store. '
-                      'Prices change fast. Check at checkout.</p>')
+                      'Prices change fast. Check at checkout. '
+                      'As an Amazon Associate, CheapAss earns from qualifying purchases.</p>')
     canon = ""
     if c.site.get("site_url"):
         canon = f'<link rel="canonical" href="{c.site["site_url"].rstrip("/")}/{rel.as_posix()}">'
@@ -183,7 +192,7 @@ def build_page(c, src):
 {disclosure}
 {body}
 <hr>
-<p><small>CheapAss is a one-person deal list. No sponsored rankings. If a deal dies, it comes off the page. Page built {TODAY.isoformat()}.</small></p>
+<p><small>CheapAss is a one-person deal list. No sponsored rankings. If a deal dies, it comes off the page. As an Amazon Associate, CheapAss earns from qualifying purchases. Page built {TODAY.isoformat()}.</small></p>
 </body>
 </html>
 """

@@ -18,7 +18,8 @@
    "price": 349.0,
    "was": 399.0,
    "checked": "2026-11-25",
-   "url": "https://www.unifydrive.com/products/unifydrive-uc250"
+   "url": "https://www.unifydrive.com/products/unifydrive-uc250",
+   "amazon": "UnifyDrive UC250 NAS"
   },
   {
    "id": "unifydrive-ut2",
@@ -37,7 +38,8 @@
    "price": 299.0,
    "was": 599.0,
    "checked": "2026-11-25",
-   "url": "https://www.unifydrive.com/products/unifydrive-ut2-copy"
+   "url": "https://www.unifydrive.com/products/unifydrive-ut2-copy",
+   "amazon": "UnifyDrive UT2 portable NAS"
   },
   {
    "id": "unifydrive-uc450pro",
@@ -56,7 +58,8 @@
    "price": 1449.0,
    "was": 1499.0,
    "checked": "2026-11-25",
-   "url": "https://www.unifydrive.com/products/unifydrive-uc450-pro"
+   "url": "https://www.unifydrive.com/products/unifydrive-uc450-pro",
+   "amazon": "UnifyDrive UC450 Pro NAS"
   },
   {
    "id": "beelink-me-mini",
@@ -75,7 +78,8 @@
    "price": 525.0,
    "was": 629.0,
    "checked": "2026-11-25",
-   "url": "https://www.bee-link.com/products/beelink-me-mini-n150"
+   "url": "https://www.bee-link.com/products/beelink-me-mini-n150",
+   "amazon": "Beelink ME mini NAS"
   },
   {
    "id": "gmktec-kb2max",
@@ -93,7 +97,8 @@
    "price": 239.99,
    "was": null,
    "checked": "2026-11-25",
-   "url": "https://www.gmktec.com/products/gmktec-nucbox-kb2-max-mini-pc-intel®-11th-i5-11320h"
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-kb2-max-mini-pc-intel®-11th-i5-11320h",
+   "amazon": "GMKtec NucBox KB2 Max"
   },
   {
    "id": "gmktec-g3ultra",
@@ -111,7 +116,8 @@
    "price": 269.99,
    "was": 369.99,
    "checked": "2026-11-25",
-   "url": "https://www.gmktec.com/products/gmktec-nucbox-g3-ultra-mini-pc-intel-pentium-gold-7505"
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-g3-ultra-mini-pc-intel-pentium-gold-7505",
+   "amazon": "GMKtec NucBox G3 Ultra"
   },
   {
    "id": "gmktec-m3pro",
@@ -129,7 +135,8 @@
    "price": 329.99,
    "was": null,
    "checked": "2026-11-25",
-   "url": "https://www.gmktec.com/products/gmktec-nucbox-m3-pro-mini-pc-intel-core-i5-13500h"
+   "url": "https://www.gmktec.com/products/gmktec-nucbox-m3-pro-mini-pc-intel-core-i5-13500h",
+   "amazon": "GMKtec NucBox M3 Pro"
   },
   {
    "id": "gmktec-m3s",
@@ -147,7 +154,8 @@
    "price": 389.99,
    "was": 519.99,
    "checked": "2026-11-25",
-   "url": "https://www.gmktec.com/products/gmktec-m3s-intel-core-3-304-mini-pc"
+   "url": "https://www.gmktec.com/products/gmktec-m3s-intel-core-3-304-mini-pc",
+   "amazon": "GMKtec M3S mini PC"
   },
   {
    "id": "gmktec-m10",
@@ -165,7 +173,8 @@
    "price": 459.99,
    "was": 599.99,
    "checked": "2026-11-25",
-   "url": "https://www.gmktec.com/products/gmktec-m10-amd-ryzen-5-6600h-mini-pc"
+   "url": "https://www.gmktec.com/products/gmktec-m10-amd-ryzen-5-6600h-mini-pc",
+   "amazon": "GMKtec M10 mini PC"
   },
   {
    "id": "beelink-eqi",
@@ -183,7 +192,8 @@
    "price": 509.0,
    "was": 629.0,
    "checked": "2026-11-25",
-   "url": "https://www.bee-link.com/products/beelink-eqi-wildcat-lake"
+   "url": "https://www.bee-link.com/products/beelink-eqi-wildcat-lake",
+   "amazon": "Beelink EQi mini PC"
   },
   {
    "id": "beelink-eqi-pro",
@@ -201,7 +211,8 @@
    "price": null,
    "was": null,
    "checked": "2026-11-24",
-   "url": "https://www.bee-link.com/products/beelink-eqi-pro-openclaw-pre-installed"
+   "url": "https://www.bee-link.com/products/beelink-eqi-pro-openclaw-pre-installed",
+   "amazon": "Beelink EQi Pro mini PC"
   },
   {
    "id": "wd-red-plus-4tb",
@@ -218,7 +229,8 @@
    "price": null,
    "was": null,
    "checked": null,
-   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd"
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd",
+   "amazon": "WD40EFPX"
   },
   {
    "id": "wd-red-plus-8tb",
@@ -235,7 +247,8 @@
    "price": null,
    "was": null,
    "checked": null,
-   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd"
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd",
+   "amazon": "WD80EFPX"
   },
   {
    "id": "wd-red-plus-12tb",
@@ -252,7 +265,8 @@
    "price": null,
    "was": null,
    "checked": null,
-   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd"
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-plus-sata-3-5-hdd",
+   "amazon": "WD120EFBX"
   },
   {
    "id": "wd-red-pro-16tb",
@@ -269,7 +283,8 @@
    "price": null,
    "was": null,
    "checked": null,
-   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd"
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd",
+   "amazon": "WD Red Pro 16TB NAS hard drive"
   },
   {
    "id": "wd-red-pro-20tb",
@@ -286,7 +301,8 @@
    "price": null,
    "was": null,
    "checked": null,
-   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd"
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd",
+   "amazon": "WD Red Pro 20TB NAS hard drive"
   },
   {
    "id": "wd-red-pro-24tb",
@@ -303,7 +319,8 @@
    "price": null,
    "was": null,
    "checked": null,
-   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd"
+   "url": "https://www.westerndigital.com/products/internal-drives/wd-red-pro-sata-hdd",
+   "amazon": "WD Red Pro 24TB NAS hard drive"
   },
   {
    "id": "pcloud-500",
@@ -391,5 +408,9 @@
     "approved": false
    }
   }
+ },
+ "_amazon": {
+  "_readme": "Amazon Associates tag. Items with an 'amazon' search phrase get an extra 'Check Amazon' link. No Amazon prices are shown (Amazon rules).",
+  "tag": "cheapass00-20"
  }
 }
