@@ -10,7 +10,10 @@ Markers in src pages:
   {{CHECKED_AT}}  {{ROOT}} (relative path to site root)
 First line of each src page: <!-- {"title": "...", "description": "..."} -->
 A price shows only if checked within 14 days (store feeds) or 45 days (manual).
-Links: manual link in links.json > Awin deep link (brand approved) > plain store URL.
+Links: manual link in links.json > Amazon product link (rows with "asin") > Awin deep link (brand approved) > plain store URL.
+Amazon rows ("source": "amazon", "asin"): never store or show a price (Amazon rules); the link carries the
+_amazon tag plus the UTM fields in _amazon.utm. Optional "faq": [[q, a], ...] in the meta line adds a
+visible FAQ block and FAQPage schema.
 """
 import json, re, html, datetime, pathlib, urllib.parse, sys
 
@@ -35,7 +38,7 @@ def nav(r):
             f'<a href="{r}deals/gmktec.html">GMKtec</a><a href="{r}deals/beelink.html">Beelink</a>'
             f'<a href="{r}deals/unifydrive.html">UnifyDrive</a>'
             f'<a href="{r}guides/cheap-nas.html">NAS guide</a><a href="{r}guides/mini-pc-homelab.html">Mini PC guide</a>'
-            f'<a href="{r}guides/index.html">All guides</a></nav>')
+            f'<a href="{r}guides/index.html">All guides</a><a href="{r}index.html#under-30">Under $30</a></nav>')
 
 
 def load(name, default=None):
@@ -63,6 +66,7 @@ class Ctx:
         cat = load("catalog.json")
         self.items, self.awin = cat["items"], cat.get("_awin", {})
         self.amazon_tag = cat.get("_amazon", {}).get("tag", "")
+        self.amazon_utm = cat.get("_amazon", {}).get("utm", {})
         self.links = load("links.json", {})
         self.site = load("site.json", {})
 
@@ -70,6 +74,9 @@ class Ctx:
         manual = self.links.get(it["id"], "")
         if manual:
             return manual, True
+        if it.get("asin") and self.amazon_tag:
+            q = urllib.parse.urlencode({"tag": self.amazon_tag, **self.amazon_utm})
+            return f"https://www.amazon.com/dp/{it['asin']}?{q}", True
         base = it.get("url") or it.get("feed") or "#"
         b = self.awin.get("brands", {}).get(it.get("brand", ""), {})
         if self.awin.get("affid") and b.get("approved") and b.get("mid"):
@@ -91,6 +98,8 @@ class Ctx:
 
 
 def price_cell(c, it):
+    if it.get("source") == "amazon":
+        return c.link(it, "Check price on Amazon")
     if not fresh(it):
         return c.link(it, "See today's price")
     s = f"<b>${it['price']:,.2f}</b>"
@@ -156,7 +165,7 @@ def render(c, body, r):
                 .replace("{{SEASON_NOTE}}", html.escape(s.get("note", "")))
                 .replace("{{CHECKED_AT}}", checked or "not yet")
                 .replace("{{ROOT}}", r))
-    return body, bool(used), checked
+    return body, bool(used), checked, any(i.get("source") == "amazon" for i in used)
 
 
 def build_page(c, src):
@@ -164,9 +173,21 @@ def build_page(c, src):
     r = "../" * (len(rel.parts) - 1)
     meta_line, body = src.read_text().split("\n", 1)
     meta = json.loads(meta_line.strip()[4:-3])
-    body, has_products, checked = render(c, body, r)
+    body, has_products, checked, has_amazon = render(c, body, r)
+    faq = meta.get("faq") or []
+    schema = ""
+    if faq:
+        body += "\n<h2>FAQ</h2>\n" + "\n".join(
+            f"<h3>{html.escape(q)}</h3>\n<p>{html.escape(a)}</p>" for q, a in faq)
+        ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
+        schema = '<script type="application/ld+json">' + json.dumps(ld).replace("</", "<\\/") + "</script>"
     disclosure = ""
-    if has_products:
+    if has_amazon:
+        disclosure = ('<p class="note">As an Amazon Associate I earn from qualifying purchases. '
+                      'Product links on this page go to Amazon. Prices are not shown here because Amazon '
+                      'changes them by the hour. Check the price on Amazon before you buy.</p>')
+    elif has_products:
         disclosure = ('<p class="note">Some links on this page may be affiliate links. If you buy '
                       'through them, CheapAss may earn a commission at no extra cost to you. '
                       f'Prices last checked: <b>{checked or "not yet"}</b> on each brand\'s own US store. '
@@ -175,6 +196,9 @@ def build_page(c, src):
     canon = ""
     if c.site.get("site_url"):
         canon = f'<link rel="canonical" href="{c.site["site_url"].rstrip("/")}/{rel.as_posix()}">'
+    verify = ""  # Search Console ownership tag, kept in site.json so rebuilds never drop it
+    if c.site.get("google_site_verification"):
+        verify = f'<meta name="google-site-verification" content="{html.escape(c.site["google_site_verification"])}" />'
     page = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -183,6 +207,8 @@ def build_page(c, src):
 <title>{html.escape(meta['title'])}</title>
 <meta name="description" content="{html.escape(meta['description'])}">
 {canon}
+{verify}
+{schema}
 <style>
 {CSS}
 </style>
