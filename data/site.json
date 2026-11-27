@@ -1,6 +1,12 @@
 {
  "site_url": "https://mrdooter-ctrl.github.io/cheapass",
  "google_site_verification": "91UfakA9Ba9zV5V_xalPakTi9GctIQcD5MZqdWn_8v8",
+ "analytics": {
+  "_readme": "Paste public measurement IDs here and run tools/build.py. Empty fields inject nothing.",
+  "ga4_id": "",
+  "clarity_id": "",
+  "goatcounter_code": ""
+ },
  "seasons": [
   {"from": "2026-11-20", "to": "2026-11-26", "heading": "Black Friday deals, live early", "note": "Black Friday is Friday, Nov 27. Cyber Monday is Nov 30. These brands started early. None of them posts an end date, so if you see a price you like, don't wait for Friday."},
   {"from": "2026-11-27", "to": "2026-11-29", "heading": "Black Friday deals", "note": "Black Friday weekend. Cyber Monday is Nov 30. The brands don't post end dates, so prices can change any hour."},
