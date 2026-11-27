@@ -809,6 +809,510 @@
    "price": null,
    "was": null,
    "checked": null
+  },
+  {
+   "id": "anker-nano-30w",
+   "group": "w2_chargers",
+   "brand": "Anker",
+   "name": "Anker Nano 30W USB-C GaN Charger (511 Nano 3)",
+   "source": "amazon",
+   "asin": "B0B42T3Y48",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Phone, tablet, Steam Deck"
+   },
+   "note": "Folding plug, one USB-C port, 30W PD. Small enough to live in a laptop bag.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-nexode-45w-2port",
+   "group": "w2_chargers",
+   "brand": "UGREEN",
+   "name": "UGREEN Nexode 45W 2-Port GaN Charger",
+   "source": "amazon",
+   "asin": "B0B38TWKVR",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Phone plus earbuds at once"
+   },
+   "note": "Two USB-C ports. 45W from one port, split when both are busy. Charges a MacBook Air at full speed.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-240w-cable-2pk",
+   "group": "w2_chargers",
+   "brand": "Anker",
+   "name": "Anker USB-C to USB-C Cable 240W, 6 ft (2-pack)",
+   "source": "amazon",
+   "asin": "B0CCXT4QZR",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Desk and bed"
+   },
+   "note": "Two 6 ft cables rated for 240W, so one cable covers phone, laptop and mini PC.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-zolo-240w-braided",
+   "group": "w2_chargers",
+   "brand": "Anker",
+   "name": "Anker Zolo USB-C Cable 240W Braided, 6 ft",
+   "source": "amazon",
+   "asin": "B0DBTTC2CH",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "A cable that gets yanked"
+   },
+   "note": "Braided jacket that survives being stepped on and stuffed in a bag.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-bio-braided-2pk",
+   "group": "w2_chargers",
+   "brand": "Anker",
+   "name": "Anker Bio-Braided USB-C Cable 240W, 6 ft (2-pack)",
+   "source": "amazon",
+   "asin": "B0BY1MX714",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Spares for every room"
+   },
+   "note": "Braided 240W pair. Buy once, stop hunting for the one good cable.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "avlt-thin-client-vesa",
+   "group": "w2_mounts",
+   "brand": "AVLT",
+   "name": "AVLT VESA Mount for Mini PCs and Thin Clients (up to 2.76 in thick)",
+   "source": "amazon",
+   "asin": "B08G134G6L",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Hiding the box behind a monitor"
+   },
+   "note": "Adjustable cradle that holds most mini PCs on a monitor back, arm, pole or under a desk.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "vivo-nuc-bracket",
+   "group": "w2_mounts",
+   "brand": "VIVO",
+   "name": "VIVO Steel VESA Bracket for Intel NUC",
+   "source": "amazon",
+   "asin": "B07B44VRL2",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "NUC-size boxes"
+   },
+   "note": "Steel bracket on the 75/100 mm VESA holes. Simple, solid, cheap.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "deal4go-nuc-vesa",
+   "group": "w2_mounts",
+   "brand": "Deal4GO",
+   "name": "Deal4GO Mini PC VESA Wall Mount Bracket",
+   "source": "amazon",
+   "asin": "B0F94F6FGY",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Wall or monitor mounting"
+   },
+   "note": "Replacement-style NUC plate that screws to the monitor or wall and lets the PC slide off.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ac-infinity-multifan-s3",
+   "group": "w2_mounts",
+   "brand": "AC Infinity",
+   "name": "AC Infinity MULTIFAN S3 120mm USB Fan",
+   "source": "amazon",
+   "asin": "B00G05A2MU",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Quiet airflow on a shelf"
+   },
+   "note": "USB-powered 120mm fan with a speed dial. Lay it beside a mini PC or router running hot in a closet.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "havit-hv-f2056",
+   "group": "w2_mounts",
+   "brand": "havit",
+   "name": "havit HV-F2056 Cooling Pad (3 fans)",
+   "source": "amazon",
+   "asin": "B00NNMB3KS",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Mini PC or laptop that throttles"
+   },
+   "note": "Metal mesh top, three fans, USB powered. Set the mini PC on it and it runs cooler and quieter.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "coolertek-n2-pad",
+   "group": "w2_mounts",
+   "brand": "Coolertek",
+   "name": "Coolertek N2 Cooling Pad (2 big fans)",
+   "source": "amazon",
+   "asin": "B07VRJCKSC",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Low noise"
+   },
+   "note": "Two large slow fans move air with less whine than many small ones.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sandisk-high-endurance-64",
+   "group": "w2_boot",
+   "brand": "SanDisk",
+   "name": "SanDisk High Endurance microSDXC 64GB",
+   "source": "amazon",
+   "asin": "B07P3D6Y5B",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Raspberry Pi running Home Assistant"
+   },
+   "note": "Made for dash cams that write all day, which is close to what a Pi's database does.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sandisk-max-endurance-64",
+   "group": "w2_boot",
+   "brand": "SanDisk",
+   "name": "SanDisk MAX Endurance microSDXC 64GB",
+   "source": "amazon",
+   "asin": "B084CJ96GT",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Set it and forget it"
+   },
+   "note": "The longest-rated SanDisk endurance card. Pick it when you never want to reflash.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "samsung-pro-endurance-64",
+   "group": "w2_boot",
+   "brand": "Samsung",
+   "name": "Samsung PRO Endurance microSDXC 64GB",
+   "source": "amazon",
+   "asin": "B09W9XYQCQ",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Long warranty"
+   },
+   "note": "Samsung's endurance card for cameras that record nonstop, with a long warranty.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "samsung-evo-select-128",
+   "group": "w2_boot",
+   "brand": "Samsung",
+   "name": "Samsung EVO Select microSDXC 128GB",
+   "source": "amazon",
+   "asin": "B0CWPN662Q",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Cheap, fast, roomy"
+   },
+   "note": "A2-rated for quick small reads. Fine for a Pi that mostly reads; less endurance than the cards above.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "samsung-fit-plus-128",
+   "group": "w2_boot",
+   "brand": "Samsung",
+   "name": "Samsung FIT Plus USB 3.1 Flash Drive 128GB",
+   "source": "amazon",
+   "asin": "B07D7PDLXC",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Proxmox installer or boot stick"
+   },
+   "note": "Tiny stick that stays plugged in. Fast enough to boot TrueNAS, Unraid or a Proxmox installer.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sandisk-ultra-fit-128",
+   "group": "w2_boot",
+   "brand": "SanDisk",
+   "name": "SanDisk Ultra Fit USB 3.2 Flash Drive 128GB",
+   "source": "amazon",
+   "asin": "B0BY2WH7QB",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Unraid-style boot drive"
+   },
+   "note": "Low-profile stick that sits flush in the back of a mini PC.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cable-matters-cat6-3ft-5pk",
+   "group": "w2_patch",
+   "brand": "Cable Matters",
+   "name": "Cable Matters Snagless Cat6 Patch Cable, 3 ft (5-pack)",
+   "source": "amazon",
+   "asin": "B00C2CBBAM",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Rack and switch patching"
+   },
+   "note": "Five short snagless cables. Enough to tidy a switch in one go.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cable-matters-cat6a-1ft-5pk",
+   "group": "w2_patch",
+   "brand": "Cable Matters",
+   "name": "Cable Matters Shielded Cat6a Patch Cable, 1 ft (5-pack)",
+   "source": "amazon",
+   "asin": "B0CBHM34ZL",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "10GbE and patch panels"
+   },
+   "note": "Shielded Cat6a, rated 10Gbps. One-foot runs from patch panel to switch.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "amazon-basics-cat6-25ft",
+   "group": "w2_patch",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics Cat6 Ethernet Cable, 25 ft",
+   "source": "amazon",
+   "asin": "B00N2VIWPY",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Room-to-room run"
+   },
+   "note": "One long cable to get the server off Wi-Fi.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "vcelink-cat6-keystone-10pk",
+   "group": "w2_patch",
+   "brand": "VCELINK",
+   "name": "VCELINK Cat6 Keystone Jacks, 10-pack",
+   "source": "amazon",
+   "asin": "B07PBTSJYT",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Wall plates and patch panels"
+   },
+   "note": "UL-listed punch-down jacks with a slim profile. Ten for the price of two at a hardware store.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "rj45-cable-tester",
+   "group": "w2_patch",
+   "brand": "Generic",
+   "name": "RJ45 / RJ11 Network Cable Tester",
+   "source": "amazon",
+   "asin": "B08RNDBQRX",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Checking your own crimps"
+   },
+   "note": "Lights up each wire pair so you know which end you botched.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "amazon-basics-surge-790j",
+   "group": "w2_surge",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics 6-Outlet Surge Protector, 790 J, 6 ft",
+   "source": "amazon",
+   "asin": "B00TP1C1UC",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Desk or shelf"
+   },
+   "note": "Six outlets, circuit breaker, protection light. Boring in the best way.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "belkin-pivot-plug-1080j",
+   "group": "w2_surge",
+   "brand": "Belkin",
+   "name": "Belkin 6-Outlet Pivot-Plug Surge Protector, 1,080 J",
+   "source": "amazon",
+   "asin": "B000JE7GPY",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Fat power bricks"
+   },
+   "note": "Rotating outlets so wall-wart adapters stop blocking each other.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "belkin-wall-mount-usb",
+   "group": "w2_surge",
+   "brand": "Belkin",
+   "name": "Belkin 6-Outlet Wall-Mount Surge Protector with USB",
+   "source": "amazon",
+   "asin": "B004CLYJ0U",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "No cord at all"
+   },
+   "note": "Plugs straight into the wall: six outlets and two USB ports with no cable to trip on.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-surge-strip",
+   "group": "w2_surge",
+   "brand": "Anker",
+   "name": "Anker Surge Protector Power Strip",
+   "source": "amazon",
+   "asin": "B07WLCNL6N",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "USB ports on the strip"
+   },
+   "note": "Surge strip with USB charging ports built in. Check the listing for the outlet count.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "poniie-pn1500",
+   "group": "w2_surge",
+   "brand": "Poniie",
+   "name": "Poniie PN1500 Watt Meter",
+   "source": "amazon",
+   "asin": "B0C7X8M591",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "Cheap second meter"
+   },
+   "note": "Plug-through meter that shows watts, volts and kWh. Small enough to leave on one device for a week.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "kill-a-watt-p4400-w2",
+   "group": "w2_surge",
+   "brand": "P3",
+   "name": "P3 Kill A Watt P4400 Electricity Usage Monitor",
+   "source": "amazon",
+   "asin": "B00009MDBU",
+   "utm": {
+    "utm_campaign": "exp001_w2"
+   },
+   "cols": {
+    "Best for": "The classic"
+   },
+   "note": "The meter everyone recommends. Measure what your server costs per month before you buy a bigger one.",
+   "price": null,
+   "was": null,
+   "checked": null
   }
  ],
  "_awin": {
@@ -830,7 +1334,7 @@
   }
  },
  "_amazon": {
-  "_readme": "Amazon Associates tag. Items with an 'amazon' search phrase get an extra 'Check Amazon' link. No Amazon prices are shown (Amazon rules). Rows with source 'amazon' and an 'asin' link straight to that Amazon product page with the tag and the utm fields here. Never add a price to them.",
+  "_readme": "Amazon Associates tag. Items with an 'amazon' search phrase get an extra 'Check Amazon' link. No Amazon prices are shown (Amazon rules). Rows with source 'amazon' and an 'asin' link straight to that Amazon product page with the tag and the utm fields here. Never add a price to them. A row may add its own 'utm' object to override fields for that row (Wave 2 rows use utm_campaign exp001_w2).",
   "tag": "cheapass00-20",
   "utm": {
    "utm_source": "cheapass",
