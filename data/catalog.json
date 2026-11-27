@@ -17,7 +17,7 @@
    "note": "The cheap 2-bay with a real Intel chip. Plex-capable. Drives not included.",
    "price": 349.0,
    "was": 399.0,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.unifydrive.com/products/unifydrive-uc250",
    "amazon": "UnifyDrive UC250 NAS"
   },
@@ -37,7 +37,7 @@
    "note": "A NAS with a battery built in. For photo shoots and travel, not a media library.",
    "price": 299.0,
    "was": 599.0,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.unifydrive.com/products/unifydrive-ut2-copy",
    "amazon": "UnifyDrive UT2 portable NAS"
   },
@@ -57,7 +57,7 @@
    "note": "Serious box. Overkill for most homes, right for a big library.",
    "price": 1449.0,
    "was": 1499.0,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.unifydrive.com/products/unifydrive-uc450-pro",
    "amazon": "UnifyDrive UC450 Pro NAS"
   },
@@ -77,7 +77,7 @@
    "note": "A tiny, silent all-SSD NAS. US stock was not confirmed, so check the page.",
    "price": 525.0,
    "was": 629.0,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.bee-link.com/products/beelink-me-mini-n150",
    "amazon": "Beelink ME mini NAS"
   },
@@ -96,7 +96,7 @@
    "note": "Cheapest real Intel box here. Bring your own RAM and SSD.",
    "price": 239.99,
    "was": null,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.gmktec.com/products/gmktec-nucbox-kb2-max-mini-pc-intel®-11th-i5-11320h",
    "amazon": "GMKtec NucBox KB2 Max"
   },
@@ -115,7 +115,7 @@
    "note": "Ready to go. Fine for Home Assistant, Pi-hole and light Plex.",
    "price": 269.99,
    "was": 369.99,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.gmktec.com/products/gmktec-nucbox-g3-ultra-mini-pc-intel-pentium-gold-7505",
    "amazon": "GMKtec NucBox G3 Ultra"
   },
@@ -134,7 +134,7 @@
    "note": "A lot of CPU for the money if you have spare RAM.",
    "price": 329.99,
    "was": null,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.gmktec.com/products/gmktec-nucbox-m3-pro-mini-pc-intel-core-i5-13500h",
    "amazon": "GMKtec NucBox M3 Pro"
   },
@@ -153,7 +153,7 @@
    "note": "Newer Intel chip. Check the RAM is enough for your VMs.",
    "price": 389.99,
    "was": 519.99,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.gmktec.com/products/gmktec-m3s-intel-core-3-304-mini-pc",
    "amazon": "GMKtec M3S mini PC"
   },
@@ -172,7 +172,7 @@
    "note": "The Proxmox pick. More cores and RAM for several VMs.",
    "price": 459.99,
    "was": 599.99,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.gmktec.com/products/gmktec-m10-amd-ryzen-5-6600h-mini-pc",
    "amazon": "GMKtec M10 mini PC"
   },
@@ -191,7 +191,7 @@
    "note": "Same chip as the GMKtec M3S with more RAM and storage.",
    "price": 509.0,
    "was": 629.0,
-   "checked": "2026-11-26",
+   "checked": "2026-11-27",
    "url": "https://www.bee-link.com/products/beelink-eqi-wildcat-lake",
    "amazon": "Beelink EQi mini PC"
   },
