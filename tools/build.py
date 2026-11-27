@@ -75,7 +75,7 @@ class Ctx:
         if manual:
             return manual, True
         if it.get("asin") and self.amazon_tag:
-            q = urllib.parse.urlencode({"tag": self.amazon_tag, **self.amazon_utm})
+            q = urllib.parse.urlencode({"tag": self.amazon_tag, **self.amazon_utm, **it.get("utm", {})})
             return f"https://www.amazon.com/dp/{it['asin']}?{q}", True
         base = it.get("url") or it.get("feed") or "#"
         b = self.awin.get("brands", {}).get(it.get("brand", ""), {})
