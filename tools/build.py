@@ -172,6 +172,36 @@ def render(c, body, r):
     return body, bool(used), checked, any(i.get("source") == "amazon" for i in used)
 
 
+def analytics_tags(site):
+    cfg = site.get("analytics") or {}
+    safe = re.compile(r"^[A-Za-z0-9_-]{3,40}$")
+    out = []
+    ga4 = (cfg.get("ga4_id") or "").strip()
+    if ga4 and safe.match(ga4):
+        e = html.escape(ga4)
+        out.append(
+            f'<script async src="https://www.googletagmanager.com/gtag/js?id={e}"></script>\n'
+            f'<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}'
+            f'gtag("js",new Date());gtag("config","{e}");'
+            f'document.addEventListener("click",function(ev){{var a=ev.target.closest&&ev.target.closest("a[href*=\\"amazon.com\\"]");'
+            f'if(a){{gtag("event","amazon_outbound_click",{{link_url:a.href,page_path:location.pathname}});}}}});</script>'
+        )
+    clarity = (cfg.get("clarity_id") or "").strip()
+    if clarity and safe.match(clarity):
+        e = html.escape(clarity)
+        out.append(
+            f'<script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};'
+            f't=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;'
+            f'y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);}})'
+            f'(window,document,"clarity","script","{e}");</script>'
+        )
+    gc = (cfg.get("goatcounter_code") or "").strip()
+    if gc and safe.match(gc):
+        e = html.escape(gc)
+        out.append(f'<script data-goatcounter="https://{e}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>')
+    return "\n".join(out)
+
+
 def build_page(c, src):
     rel = src.relative_to(SRC)
     r = "../" * (len(rel.parts) - 1)
@@ -204,6 +234,7 @@ def build_page(c, src):
     verify = ""  # Search Console ownership tag, kept in site.json so rebuilds never drop it
     if c.site.get("google_site_verification"):
         verify = f'<meta name="google-site-verification" content="{html.escape(c.site["google_site_verification"])}" />'
+    analytics = analytics_tags(c.site)
     page = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -213,6 +244,7 @@ def build_page(c, src):
 <meta name="description" content="{html.escape(meta['description'])}">
 {canon}
 {verify}
+{analytics}
 {schema}
 <style>
 {CSS}

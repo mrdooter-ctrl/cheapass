@@ -1313,6 +1313,456 @@
    "price": null,
    "was": null,
    "checked": null
+  },
+  {
+   "id": "fueran-hdmi-dummy-4k",
+   "group": "w4_display",
+   "brand": "FUERAN",
+   "name": "FUERAN 4K HDMI Dummy Plug Headless Display Emulator",
+   "source": "amazon",
+   "asin": "B087PWJ85V",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Headless mini PCs and servers"
+   },
+   "note": "Tricks a headless mini PC or Mac Mini into unlocking full 4K remote desktop resolution without a monitor.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "evanlak-hdmi-dummy-4k60",
+   "group": "w4_display",
+   "brand": "EVanlak",
+   "name": "EVanlak 4K@60Hz HDMI Dummy Plug EDID Emulator",
+   "source": "amazon",
+   "asin": "B07YMTMMH5",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Moonlight, Parsec, or VNC"
+   },
+   "note": "Aluminum 4K 60Hz EDID emulator. Keeps hardware video acceleration active when no screen is attached.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-310-usbc-hdmi",
+   "group": "w4_display",
+   "brand": "Anker",
+   "name": "Anker 310 USB-C to HDMI Adapter (4K@60Hz)",
+   "source": "amazon",
+   "asin": "B07X5VJQ3D",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Quick monitor hookup"
+   },
+   "note": "Simple aluminum USB-C to HDMI dongle for setting up a BIOS or connecting a laptop to any TV.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cablematters-usbc-dp14",
+   "group": "w4_display",
+   "brand": "Cable Matters",
+   "name": "Cable Matters USB-C to DisplayPort 1.4 Adapter",
+   "source": "amazon",
+   "asin": "B07F17ZHJY",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "DisplayPort monitors"
+   },
+   "note": "Compact USB-C to DisplayPort 1.4 adapter for high-refresh or 4K monitors when HDMI ports are full.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "amazonbasics-hdmi-3ft",
+   "group": "w4_display",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics Braided High-Speed HDMI Cable, 3 ft",
+   "source": "amazon",
+   "asin": "B075ZTJ9XR",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Short VESA-mount runs"
+   },
+   "note": "Three-foot braided 4K 60Hz HDMI cable. Just long enough for a mini PC mounted behind the screen.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "plugable-usbc-e2500",
+   "group": "w4_nic",
+   "brand": "Plugable",
+   "name": "Plugable USBC-E2500 2.5GbE USB-C and USB-A Adapter",
+   "source": "amazon",
+   "asin": "B084L4JL9K",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "USB-C or USB-A hosts"
+   },
+   "note": "Realtek RTL8156B chipset with an attached USB-A tip. Reliable Linux, Proxmox, Windows and macOS support.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-usbc-25gbe",
+   "group": "w4_nic",
+   "brand": "UGREEN",
+   "name": "UGREEN USB-C to 2.5GbE Aluminum Ethernet Adapter",
+   "source": "amazon",
+   "asin": "B0CD1FDKT1",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Budget 2.5GbE upgrade"
+   },
+   "note": "Compact aluminum shell that bumps a 1GbE laptop or mini PC up to 2.5Gbps for fast NAS transfers.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-powerexpand-25gbe",
+   "group": "w4_nic",
+   "brand": "Anker",
+   "name": "Anker PowerExpand USB-C to 2.5Gbps Ethernet Adapter",
+   "source": "amazon",
+   "asin": "B097N5WJY9",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Laptops and travel bags"
+   },
+   "note": "Braided cord and aluminum body from Anker. Plug-and-play 2.5GbE on modern laptops and mini PCs.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cablematters-usbc-25gbe",
+   "group": "w4_nic",
+   "brand": "Cable Matters",
+   "name": "Cable Matters USB-C to 2.5GbE Braided Adapter",
+   "source": "amazon",
+   "asin": "B0DHXLGC92",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Sustained NAS transfers"
+   },
+   "note": "Aluminum heatsink body with braided pigtail built to handle long multi-gigabit backups without throttling.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "tplink-ue300c-gbe",
+   "group": "w4_nic",
+   "brand": "TP-Link",
+   "name": "TP-Link UE300C USB-C to Gigabit Ethernet Adapter",
+   "source": "amazon",
+   "asin": "B08HQBC678",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Cheap 1GbE second port"
+   },
+   "note": "Standard 1GbE, not 2.5GbE, but tiny, foldable and cheap when you only need a spare wired port.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "arctic-mx6-4g",
+   "group": "w4_tools",
+   "brand": "ARCTIC",
+   "name": "ARCTIC MX-6 Thermal Paste (4g)",
+   "source": "amazon",
+   "asin": "B09VDL3CW6",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Repasting a noisy mini PC"
+   },
+   "note": "Non-conductive, thick enough to resist pump-out on bare mini PC laptop dies. Four grams lasts several builds.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "noctua-nth1",
+   "group": "w4_tools",
+   "brand": "Noctua",
+   "name": "Noctua NT-H1 Thermal Compound",
+   "source": "amazon",
+   "asin": "B072JM5HM6",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Easy spread, proven classic"
+   },
+   "note": "No cure time, non-conductive, easy to clean up. A safe staple for desktops and homelab boxes.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sabrent-m2-heatsink",
+   "group": "w4_tools",
+   "brand": "Sabrent",
+   "name": "Sabrent M.2 2280 SSD Rocket Heatsink (SB-HTSK)",
+   "source": "amazon",
+   "asin": "B07TN2RX2K",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Hot Gen4 NVMe drives"
+   },
+   "note": "Copper and aluminum heatsink with thermal tape included. Check height clearance before using inside a mini PC.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "thermalright-m2-heatsink",
+   "group": "w4_tools",
+   "brand": "Thermalright",
+   "name": "Thermalright M.2 2280 NVMe SSD Heatsink",
+   "source": "amazon",
+   "asin": "B0C68J2V98",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Budget SSD cooling"
+   },
+   "note": "Low-cost aluminum cooler with silicone pads to keep a Proxmox or NAS cache SSD from thermal throttling.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ifixit-moray-kit",
+   "group": "w4_tools",
+   "brand": "iFixit",
+   "name": "iFixit Moray 32-Bit Precision Driver Kit",
+   "source": "amazon",
+   "asin": "B08NWKMT8V",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Opening mini PCs and NAS boxes"
+   },
+   "note": "Magnetic case with Phillips, Torx and hex bits that won't strip tiny M.2 standoff screws.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sonoff-zbdongle-p",
+   "group": "w4_smarthome",
+   "brand": "SONOFF",
+   "name": "SONOFF Zigbee 3.0 USB Dongle Plus (ZBDongle-P, CC2652P)",
+   "source": "amazon",
+   "asin": "B09KXTCMSC",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Zigbee2MQTT on Home Assistant"
+   },
+   "note": "The gold-standard TI CC2652P coordinator with an external antenna. Rock solid on Zigbee2MQTT and ZHA.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sonoff-zbdongle-e",
+   "group": "w4_smarthome",
+   "brand": "SONOFF",
+   "name": "SONOFF Zigbee 3.0 USB Dongle Plus-E (EFR32MG21)",
+   "source": "amazon",
+   "asin": "B0B6P22YJC",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "ZHA and Thread firmware tinkering"
+   },
+   "note": "Silicon Labs EFR32MG21 chip in an aluminum shell. Plug-and-play with Home Assistant ZHA.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "tplink-ub500-bt",
+   "group": "w4_smarthome",
+   "brand": "TP-Link",
+   "name": "TP-Link UB500 Bluetooth 5.0 Nano USB Adapter",
+   "source": "amazon",
+   "asin": "B09DMP6T22",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Home Assistant BLE sensors"
+   },
+   "note": "Adds Linux-supported Bluetooth to a mini PC or Pi for tracking temperature sensors and SwitchBot gear.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "amazonbasics-usb2-ext-6ft",
+   "group": "w4_smarthome",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics USB 2.0 Extension Cable (6.5 ft)",
+   "source": "amazon",
+   "asin": "B00NH136GE",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Stopping USB 3.0 Zigbee interference"
+   },
+   "note": "Mandatory cheap fix: moves a Zigbee stick away from noisy USB 3.0 ports so sensors stop dropping offline.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-usb-ext-6ft",
+   "group": "w4_smarthome",
+   "brand": "UGREEN",
+   "name": "UGREEN USB Extension Cable (6 ft)",
+   "source": "amazon",
+   "asin": "B00P0NKVSQ",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Placing dongles out in the open"
+   },
+   "note": "Plug into a USB 2.0 port to lift a Zigbee or Bluetooth stick out of a metal cabinet or behind a rack.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sabrent-ec-sshd",
+   "group": "w4_storage_tools",
+   "brand": "Sabrent",
+   "name": "Sabrent USB 3.0 to 2.5-Inch SATA Hard Drive Adapter (EC-SSHD)",
+   "source": "amazon",
+   "asin": "B011M8YQ70",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Quick SSD cloning and recovery"
+   },
+   "note": "Plug any bare 2.5-inch SATA SSD or laptop drive straight into USB without screwing it into a case.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "startech-usb3-sata",
+   "group": "w4_storage_tools",
+   "brand": "StarTech",
+   "name": "StarTech USB 3.0 to 2.5-Inch SATA Adapter Cable (USB3S2SAT3CB)",
+   "source": "amazon",
+   "asin": "B00HJZJI84",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "IT bench reliability"
+   },
+   "note": "UASP-capable SATA adapter with StarTech reliability. Great for imaging Linux drives and wiping old SSDs.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-usbc-sd-reader",
+   "group": "w4_storage_tools",
+   "brand": "Anker",
+   "name": "Anker USB-C 2-in-1 SD and microSD Card Reader",
+   "source": "amazon",
+   "asin": "B07NW8RPYN",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Flashing Raspberry Pi images"
+   },
+   "note": "Compact USB-C reader with full SD and microSD slots. Fast for flashing Home Assistant or unloading cameras.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-usbc-sd-reader",
+   "group": "w4_storage_tools",
+   "brand": "UGREEN",
+   "name": "UGREEN USB-C Dual SD and microSD Card Reader",
+   "source": "amazon",
+   "asin": "B07N6BMQTZ",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Reading two cards at once"
+   },
+   "note": "Reads SD and microSD simultaneously over 5Gbps USB-C. Works on laptops, tablets and phones.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sandisk-mobilemate-microsd",
+   "group": "w4_storage_tools",
+   "brand": "SanDisk",
+   "name": "SanDisk MobileMate USB 3.0 microSD Card Reader",
+   "source": "amazon",
+   "asin": "B07G5JV2B5",
+   "utm": {
+    "utm_campaign": "exp001_w4"
+   },
+   "cols": {
+    "Best for": "Tiny USB-A microSD flasher"
+   },
+   "note": "Thumb-sized USB-A reader built for fast UHS-I microSD writes. Keep one in the homelab drawer.",
+   "price": null,
+   "was": null,
+   "checked": null
   }
  ],
  "_awin": {
