@@ -57,6 +57,8 @@ def main():
     data = json.loads(CATALOG.read_text())
     feeds, changes, problems = {}, [], []
     for it in data["items"]:
+        if it.get("source") == "amazon":  # Amazon prices are never stored
+            continue
         if it.get("source") != "shopify":
             if it.get("checked"):
                 age = (datetime.date.today() - datetime.date.fromisoformat(it["checked"])).days

@@ -389,6 +389,426 @@
    "was": null,
    "checked": "2026-11-24",
    "url": "https://www.backblaze.com/cloud-backup/pricing"
+  },
+  {
+   "id": "anker-332-hub",
+   "group": "u30_hubs",
+   "brand": "Anker",
+   "name": "Anker 332 USB-C Hub (5-in-1)",
+   "source": "amazon",
+   "asin": "B0BMXQJFKQ",
+   "cols": {
+    "Best for": "Laptop on the go"
+   },
+   "note": "The safe default: HDMI, one USB-C and two USB-A data ports, plus charging passthrough.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-5in1-hub",
+   "group": "u30_hubs",
+   "brand": "UGREEN",
+   "name": "UGREEN Revodok 5-in-1 USB-C Hub",
+   "source": "amazon",
+   "asin": "B0BR3M8XHK",
+   "cols": {
+    "Best for": "Laptop on the go"
+   },
+   "note": "Same five-port layout as the Anker, with 100W passthrough. Buy whichever is cheaper today.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-6in1-hub",
+   "group": "u30_hubs",
+   "brand": "UGREEN",
+   "name": "UGREEN 6-in-1 USB-C Hub with SD reader",
+   "source": "amazon",
+   "asin": "B093BKWH9N",
+   "cols": {
+    "Best for": "Photos and 4K screens"
+   },
+   "note": "Adds SD and microSD slots and runs HDMI at 4K 60Hz. No charging passthrough.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-revodok-7in1",
+   "group": "u30_hubs",
+   "brand": "UGREEN",
+   "name": "UGREEN Revodok 7-in-1 USB-C Hub with Ethernet",
+   "source": "amazon",
+   "asin": "B093FKT9BF",
+   "cols": {
+    "Best for": "Desk with a network cable"
+   },
+   "note": "Gigabit Ethernet port. The pick for a laptop that lives on a desk.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-4port-usb3",
+   "group": "u30_hubs",
+   "brand": "Anker",
+   "name": "Anker 4-Port USB 3.0 Hub",
+   "source": "amazon",
+   "asin": "B07L32B9C2",
+   "cols": {
+    "Best for": "Mini PC out of ports"
+   },
+   "note": "USB-A in, four USB-A out, data only. Four more ports for a box that ran out.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sabrent-ec-snve",
+   "group": "u30_enclosures",
+   "brand": "Sabrent",
+   "name": "Sabrent EC-SNVE M.2 NVMe/SATA enclosure",
+   "source": "amazon",
+   "asin": "B08RVC6F9Y",
+   "cols": {
+    "Best for": "Any M.2 drive"
+   },
+   "note": "Takes NVMe or SATA M.2 drives, 10Gbps, no screwdriver.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-m2-nvme-sata",
+   "group": "u30_enclosures",
+   "brand": "UGREEN",
+   "name": "UGREEN M.2 NVMe and SATA enclosure",
+   "source": "amazon",
+   "asin": "B09C8DPNZJ",
+   "cols": {
+    "Best for": "Any M.2 drive"
+   },
+   "note": "UGREEN's version of the same idea: NVMe or SATA, 10Gbps, tool-free.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "dockteck-m2",
+   "group": "u30_enclosures",
+   "brand": "dockteck",
+   "name": "dockteck M.2 NVMe/SATA enclosure",
+   "source": "amazon",
+   "asin": "B0D2M8FSJ6",
+   "cols": {
+    "Best for": "Any M.2 drive"
+   },
+   "note": "Lesser-known brand, same spec sheet: NVMe or SATA, 10Gbps, UASP.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "orico-pwm2",
+   "group": "u30_enclosures",
+   "brand": "ORICO",
+   "name": "ORICO aluminum M.2 NVMe enclosure (PWM2)",
+   "source": "amazon",
+   "asin": "B0BWMTW9WW",
+   "cols": {
+    "Best for": "NVMe drive"
+   },
+   "note": "Aluminum shell, NVMe only. Turns a spare SSD into a fast pocket drive.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-nvme-toolfree",
+   "group": "u30_enclosures",
+   "brand": "UGREEN",
+   "name": "UGREEN tool-free M.2 NVMe enclosure",
+   "source": "amazon",
+   "asin": "B09T97Z7DM",
+   "cols": {
+    "Best for": "NVMe drive"
+   },
+   "note": "NVMe only, tool-free, and listed as working on Thunderbolt ports too.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sabrent-ec-uasp",
+   "group": "u30_enclosures",
+   "brand": "Sabrent",
+   "name": "Sabrent EC-UASP 2.5-inch SATA enclosure",
+   "source": "amazon",
+   "asin": "B00OJ3UJ2S",
+   "cols": {
+    "Best for": "Old laptop drive"
+   },
+   "note": "For the 2.5-inch SSD or laptop drive pulled out of an old machine.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "tplink-sg105",
+   "group": "u30_network",
+   "brand": "TP-Link",
+   "name": "TP-Link TL-SG105 5-port gigabit switch",
+   "source": "amazon",
+   "asin": "B00A128S24",
+   "cols": {
+    "Best for": "Plug and forget"
+   },
+   "note": "Five gigabit ports in a metal box, no fan. Plug it in and forget it exists.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "tplink-sg105e",
+   "group": "u30_network",
+   "brand": "TP-Link",
+   "name": "TP-Link TL-SG105E 5-port Easy Smart switch",
+   "source": "amazon",
+   "asin": "B00N0OHEMA",
+   "cols": {
+    "Best for": "Homelab VLANs"
+   },
+   "note": "Same box with a web page: VLANs, QoS and port mirroring for tinkering.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "tplink-sg108",
+   "group": "u30_network",
+   "brand": "TP-Link",
+   "name": "TP-Link TL-SG108 8-port gigabit switch",
+   "source": "amazon",
+   "asin": "B00A121WN6",
+   "cols": {
+    "Best for": "More devices"
+   },
+   "note": "Eight ports, for when the mini PC, NAS and TV all want a cable.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "netgear-gs305",
+   "group": "u30_network",
+   "brand": "NETGEAR",
+   "name": "NETGEAR GS305 5-port gigabit switch",
+   "source": "amazon",
+   "asin": "B07S98YLHM",
+   "cols": {
+    "Best for": "Plug and forget"
+   },
+   "note": "The other safe five-port. Pick on price.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cablematters-cat6-5pk",
+   "group": "u30_network",
+   "brand": "Cable Matters",
+   "name": "Cable Matters Cat6 cables, 5-pack, 5 ft",
+   "source": "amazon",
+   "asin": "B00C2DL96W",
+   "cols": {
+    "Best for": "Wiring a small rack"
+   },
+   "note": "Five snagless 5-foot Cat6 cables. Enough for a switch, a NAS and a mini PC.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "amazonbasics-cat6-5pk",
+   "group": "u30_network",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics Cat6 cables, 5-pack, 5 ft, multicolor",
+   "source": "amazon",
+   "asin": "B07RS68QKW",
+   "cols": {
+    "Best for": "Telling cables apart"
+   },
+   "note": "Color-coded, so the NAS cable and the router cable stop looking the same.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "kasa-kp115",
+   "group": "u30_power",
+   "brand": "Kasa",
+   "name": "Kasa KP115 smart plug with energy monitoring",
+   "source": "amazon",
+   "asin": "B08LN3C7WK",
+   "cols": {
+    "Best for": "Measuring a server"
+   },
+   "note": "Shows what your server draws, in watts, in an app. Home Assistant can read it.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "kasa-kp125m-2pk",
+   "group": "u30_power",
+   "brand": "Kasa",
+   "name": "Kasa KP125M Matter smart plug, 2-pack",
+   "source": "amazon",
+   "asin": "B0BYGRLRS1",
+   "cols": {
+    "Best for": "Any smart home"
+   },
+   "note": "Energy monitoring plus Matter, so Apple Home, Google and Alexa all see it.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "killawatt-p4400",
+   "group": "u30_power",
+   "brand": "P3",
+   "name": "P3 Kill A Watt P4400 usage monitor",
+   "source": "amazon",
+   "asin": "B00009MDBU",
+   "cols": {
+    "Best for": "No app, no account"
+   },
+   "note": "No Wi-Fi and no account. Plug in, read the watts on the screen.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "amazon-smart-plug",
+   "group": "u30_power",
+   "brand": "Amazon",
+   "name": "Amazon Smart Plug",
+   "source": "amazon",
+   "asin": "B089DR29T6",
+   "cols": {
+    "Best for": "Alexa homes"
+   },
+   "note": "Alexa-only on and off. No energy readings, so fine for a lamp, not a server audit.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-usbc-strip-300j",
+   "group": "u30_power",
+   "brand": "Anker",
+   "name": "Anker USB-C power strip, 6 outlets, 20W",
+   "source": "amazon",
+   "asin": "B0B8SHPS5B",
+   "cols": {
+    "Best for": "Desk charging"
+   },
+   "note": "Six outlets plus USB-C charging in a small block. Only 300 joules, so the NAS goes on a UPS.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-331-strip",
+   "group": "u30_power",
+   "brand": "Anker",
+   "name": "Anker 331 power strip, 6 outlets, 3 USB",
+   "source": "amazon",
+   "asin": "B08YY9X1JV",
+   "cols": {
+    "Best for": "Behind furniture"
+   },
+   "note": "Six outlets, three USB ports and a flat plug that fits behind a desk.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "velcro-onewrap-50",
+   "group": "u30_cables",
+   "brand": "VELCRO Brand",
+   "name": "VELCRO Brand ONE-WRAP ties, 50-pack",
+   "source": "amazon",
+   "asin": "B000F5K82A",
+   "cols": {
+    "Best for": "Bundling cables"
+   },
+   "note": "Fifty reusable ties. Undo them when the setup changes, which it will.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "joto-sleeve-4pk",
+   "group": "u30_cables",
+   "brand": "JOTO",
+   "name": "JOTO cable management sleeve, 4-pack",
+   "source": "amazon",
+   "asin": "B015HWXG4M",
+   "cols": {
+    "Best for": "Desk-to-floor runs"
+   },
+   "note": "Zips a bundle of desk cables into one tube.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "envisioned-clips-10",
+   "group": "u30_cables",
+   "brand": "ENVISIONED",
+   "name": "ENVISIONED adhesive cable clips, 10-pack",
+   "source": "amazon",
+   "asin": "B07TXMMNRV",
+   "cols": {
+    "Best for": "Chargers on the desk"
+   },
+   "note": "Sticky clips that stop chargers sliding off the desk. Ties included.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "sleclean-tray",
+   "group": "u30_cables",
+   "brand": "Sleclean",
+   "name": "Sleclean under-desk cable tray with clamp",
+   "source": "amazon",
+   "asin": "B0CD88HK1C",
+   "cols": {
+    "Best for": "Hiding a power strip"
+   },
+   "note": "Clamp-on steel tray. The power strip and the mess go under the desk, no drilling.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "delamu-raceway",
+   "group": "u30_cables",
+   "brand": "Delamu",
+   "name": "Delamu cord hider raceway kit, 157 in",
+   "source": "amazon",
+   "asin": "B07GPFDL1K",
+   "cols": {
+    "Best for": "Cords down a wall"
+   },
+   "note": "Adhesive channels that hide cords running down a wall to the outlet.",
+   "price": null,
+   "was": null,
+   "checked": null
   }
  ],
  "_awin": {
@@ -410,7 +830,11 @@
   }
  },
  "_amazon": {
-  "_readme": "Amazon Associates tag. Items with an 'amazon' search phrase get an extra 'Check Amazon' link. No Amazon prices are shown (Amazon rules).",
-  "tag": "cheapass00-20"
+  "_readme": "Amazon Associates tag. Items with an 'amazon' search phrase get an extra 'Check Amazon' link. No Amazon prices are shown (Amazon rules). Rows with source 'amazon' and an 'asin' link straight to that Amazon product page with the tag and the utm fields here. Never add a price to them.",
+  "tag": "cheapass00-20",
+  "utm": {
+   "utm_source": "cheapass",
+   "utm_campaign": "exp001"
+  }
  }
 }
