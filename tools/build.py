@@ -22,15 +22,18 @@ SRC = ROOT / "_src"  # underscore: GitHub Pages does not publish it
 TODAY = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else datetime.date.today()
 MAX_AGE = {"shopify": 14, "manual": 45}
 
-CSS = """body{font-family:Georgia,serif;max-width:780px;margin:0 auto;padding:16px;background:#fff;color:#111;line-height:1.5}
-h1{font-size:1.6em;margin:.2em 0} h2{font-size:1.2em;margin-top:1.6em} .tag{color:#555;margin:2px 0 12px}
-.brand{font-weight:bold;color:#111;text-decoration:none} nav{font-size:.9em;margin-bottom:8px;line-height:1.9} nav a{margin-right:10px}
-.note{background:#ffffcc;border:1px solid #cc9;padding:8px;font-size:.9em} .sale{background:#111;color:#fff;padding:8px 10px;font-weight:bold}
-.wrap{overflow-x:auto} table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.95em}
-td,th{border-bottom:1px solid #ddd;padding:6px 4px;text-align:left;vertical-align:top} th{font-size:.85em;color:#555}
+CSS = """body{font-family:Georgia,serif;max-width:780px;margin:0 auto;padding:14px 16px;background:#fff;color:#111;line-height:1.5}
+h1{font-size:1.55em;margin:.2em 0 .15em} h2{font-size:1.2em;margin-top:1.4em} .tag{color:#555;margin:2px 0 10px}
+.brand{font-weight:bold;color:#111;text-decoration:none} nav{font-size:.9em;margin-bottom:6px;line-height:1.8} nav a{margin-right:10px}
+.note{background:#ffffcc;border:1px solid #cc9;padding:6px 8px;font-size:.86em;margin:6px 0 10px} .sale{background:#111;color:#fff;padding:7px 10px;font-weight:bold;margin:8px 0}
+.complete{background:#f7f7f7;border:1px solid #ddd;padding:10px 12px;margin:14px 0;font-size:.93em}
+.cta{display:inline-block;background:#111;color:#fff !important;padding:5px 10px;border-radius:4px;text-decoration:none;font-family:system-ui,-apple-system,sans-serif;font-size:.84em;font-weight:600;white-space:nowrap}
+.cta:hover{background:#333}
+.wrap{overflow-x:auto} table{border-collapse:collapse;width:100%;margin:10px 0;font-size:.95em}
+td,th{border-bottom:1px solid #ddd;padding:7px 5px;text-align:left;vertical-align:top} th{font-size:.85em;color:#555}
 .was{color:#888;text-decoration:line-through} .pct{color:#060;font-weight:bold} a{color:#00c} small{color:#666}
 label{display:block;margin:6px 0} input{font:inherit;width:7em} .out{font-size:1.1em;background:#f4f4f4;padding:8px}
-@media (prefers-color-scheme: dark){body{background:#111;color:#eee}.brand{color:#eee}.sale{background:#eee;color:#111}.note{background:#332;border-color:#665}td,th{border-color:#333}a{color:#8af}.tag,th,small{color:#aaa}.out{background:#222}input{background:#222;color:#eee;border:1px solid #555}}"""
+@media (prefers-color-scheme: dark){body{background:#111;color:#eee}.brand{color:#eee}.sale{background:#eee;color:#111}.note{background:#332;border-color:#665}.complete{background:#1c1c1c;border-color:#333}.cta{background:#f0c14b;color:#111 !important}.cta:hover{background:#ffd262}td,th{border-color:#333}a{color:#8af}.tag,th,small{color:#aaa}.out{background:#222}input{background:#222;color:#eee;border:1px solid #555}}"""
 
 
 def nav(r):
@@ -84,10 +87,11 @@ class Ctx:
             return "https://www.awin1.com/cread.php?" + q, True
         return base, False
 
-    def link(self, it, text):
+    def link(self, it, text, cls=""):
         u, aff = self.url(it)
         rel = "sponsored nofollow" if aff else "nofollow"
-        return f'<a href="{html.escape(u)}" rel="{rel}">{html.escape(text)}</a>'
+        c_attr = f' class="{cls}"' if cls else ""
+        return f'<a{c_attr} href="{html.escape(u)}" rel="{rel}">{html.escape(text)}</a>'
 
 
     def amazon(self, it):
@@ -99,7 +103,7 @@ class Ctx:
 
 def price_cell(c, it):
     if it.get("source") == "amazon":
-        return c.link(it, "Check price on Amazon")
+        return c.link(it, "Check price on Amazon \u2192", cls="cta")
     if not fresh(it):
         return c.link(it, "See today's price")
     s = f"<b>${it['price']:,.2f}</b>"
@@ -185,8 +189,9 @@ def build_page(c, src):
     disclosure = ""
     if has_amazon:
         disclosure = ('<p class="note">As an Amazon Associate I earn from qualifying purchases. '
-                      'Product links on this page go to Amazon. Prices are not shown here because Amazon '
-                      'changes them by the hour. Check the price on Amazon before you buy.</p>')
+                      f'<b>Picks reviewed: {TODAY.isoformat()}.</b> '
+                      'Product links on this page go to Amazon; prices are not shown here because Amazon '
+                      'changes them by the hour. Check the live price on Amazon before you buy.</p>')
     elif has_products:
         disclosure = ('<p class="note">Some links on this page may be affiliate links. If you buy '
                       'through them, CheapAss may earn a commission at no extra cost to you. '
