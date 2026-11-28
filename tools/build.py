@@ -25,6 +25,7 @@ MAX_AGE = {"shopify": 14, "manual": 45}
 CSS = """body{font-family:Georgia,serif;max-width:780px;margin:0 auto;padding:14px 16px;background:#fff;color:#111;line-height:1.5}
 h1{font-size:1.55em;margin:.2em 0 .15em} h2{font-size:1.2em;margin-top:1.4em} .tag{color:#555;margin:2px 0 10px}
 .brand{font-weight:bold;color:#111;text-decoration:none} nav{font-size:.9em;margin-bottom:6px;line-height:1.8} nav a{margin-right:10px}
+.comm{font-size:.86em;color:#444;margin:0 0 8px} .comm a{margin-right:8px}
 .note{background:#ffffcc;border:1px solid #cc9;padding:6px 8px;font-size:.86em;margin:6px 0 10px} .sale{background:#111;color:#fff;padding:7px 10px;font-weight:bold;margin:8px 0}
 .complete{background:#f7f7f7;border:1px solid #ddd;padding:10px 12px;margin:14px 0;font-size:.93em}
 .cta{display:inline-block;background:#111;color:#fff !important;padding:5px 10px;border-radius:4px;text-decoration:none;font-family:system-ui,-apple-system,sans-serif;font-size:.84em;font-weight:600;white-space:nowrap}
@@ -41,7 +42,20 @@ def nav(r):
             f'<a href="{r}deals/gmktec.html">GMKtec</a><a href="{r}deals/beelink.html">Beelink</a>'
             f'<a href="{r}deals/unifydrive.html">UnifyDrive</a>'
             f'<a href="{r}guides/cheap-nas.html">NAS guide</a><a href="{r}guides/mini-pc-homelab.html">Mini PC guide</a>'
-            f'<a href="{r}guides/index.html">All guides</a><a href="{r}index.html#under-30">Under $30</a></nav>')
+            f'<a href="{r}guides/index.html">All guides</a><a href="{r}index.html#under-30">Under $30</a>'
+            f'<a href="{r}index.html#ladders">Ladders</a></nav>')
+
+
+def community_bar(site):
+    comm = site.get("community") or {}
+    links = []
+    for key, label in (("telegram_url", "Telegram Deals"), ("discord_url", "Discord"), ("x_url", "X (@CheapAssHomelab)")):
+        u = (comm.get(key) or "").strip()
+        if u.startswith("https://"):
+            links.append(f'<a href="{html.escape(u)}" rel="noopener" target="_blank">{label}</a>')
+    if not links:
+        return ""
+    return '<p class="comm"><b>Get daily deal drops:</b> ' + " &middot; ".join(links) + "</p>"
 
 
 def load(name, default=None):
@@ -252,6 +266,7 @@ def build_page(c, src):
 </head>
 <body>
 {nav(r)}
+{community_bar(c.site)}
 {disclosure}
 {body}
 <hr>
