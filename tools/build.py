@@ -43,7 +43,7 @@ def nav(r):
             f'<a href="{r}deals/unifydrive.html">UnifyDrive</a>'
             f'<a href="{r}guides/cheap-nas.html">NAS guide</a><a href="{r}guides/mini-pc-homelab.html">Mini PC guide</a>'
             f'<a href="{r}guides/index.html">All guides</a><a href="{r}index.html#under-30">Under $30</a>'
-            f'<a href="{r}index.html#ladders">Ladders</a></nav>')
+            f'<a href="{r}index.html#ladders">Ladders</a><a href="{r}index.html#fixes">Fix BOMs</a></nav>')
 
 
 def community_bar(site):

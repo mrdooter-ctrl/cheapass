@@ -2276,6 +2276,671 @@
    "price": null,
    "was": null,
    "checked": null
+  },
+  {
+   "id": "fix-usb2-ext-amazonbasics",
+   "group": "fix_zigbee",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics USB 2.0 Extension Cable (6.5 ft, Shielded)",
+   "source": "amazon",
+   "asin": "B00NH136GE",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Role": "Step 1: Mandatory RF isolation",
+    "Best for": "Moving coordinator away from USB 3.0 ports"
+   },
+   "note": "USB 2.0 signaling eliminates USB 3.0 2.4GHz broadband noise. Plug into a USB 2.0 port if your host has one.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-usb2-ext-ugreen",
+   "group": "fix_zigbee",
+   "brand": "UGREEN",
+   "name": "UGREEN USB Extension Cable (6 ft)",
+   "source": "amazon",
+   "asin": "B00P0NKVSQ",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Role": "Alternate extension lead",
+    "Best for": "Placing antenna above metal racks"
+   },
+   "note": "Braided/shielded 6 ft lead. Use strictly on a USB 2.0 host port for Zigbee/Thread radios.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-sabrent-usb2-hub",
+   "group": "fix_zigbee",
+   "brand": "Sabrent",
+   "name": "Sabrent 4-Port USB 2.0 Hub with Power Switches (HB-UMLS)",
+   "source": "amazon",
+   "asin": "B00BWF5U0M",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Role": "USB 2.0 protocol step-down hub",
+    "Best for": "Mini PCs that only have USB 3.0 ports"
+   },
+   "note": "No USB 3.0 SuperSpeed lines inside the hub — cleanly isolates Zigbee + Bluetooth sticks from USB 3.0 noise.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-sonoff-zbdongle-p",
+   "group": "fix_zigbee",
+   "brand": "SONOFF",
+   "name": "SONOFF Zigbee 3.0 USB Dongle Plus (ZBDongle-P, TI CC2652P)",
+   "source": "amazon",
+   "asin": "B09KXTCMSC",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Role": "Zigbee2MQTT coordinator",
+    "Best for": "Proven Zigbee 3.0 stability"
+   },
+   "note": "TI CC2652P chip with external high-gain antenna. Default choice for Zigbee2MQTT and ZHA.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-sonoff-zbdongle-e",
+   "group": "fix_zigbee",
+   "brand": "SONOFF",
+   "name": "SONOFF Zigbee 3.0 USB Dongle Plus-E (EFR32MG21)",
+   "source": "amazon",
+   "asin": "B0B6P22YJC",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Role": "ZHA / Thread-capable variant",
+    "Best for": "ZHA or Matter-over-Thread testing"
+   },
+   "note": "Silicon Labs EFR32MG21 silicon in aluminum housing. Supports ZHA and OpenThread firmware flashes.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-tplink-ub500",
+   "group": "fix_zigbee",
+   "brand": "TP-Link",
+   "name": "TP-Link UB500 Bluetooth 5.0 Nano USB Adapter",
+   "source": "amazon",
+   "asin": "B09DMP6T22",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Role": "Dedicated BLE sensor radio",
+    "Best for": "Separate Bluetooth off Zigbee combo"
+   },
+   "note": "Linux/Home Assistant supported BLE radio. Keeps Bluetooth scanning separate from your Zigbee coordinator.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-p3-plus-1tb",
+   "group": "fix_nvme",
+   "brand": "Crucial",
+   "name": "Crucial P3 Plus 1TB PCIe Gen4 M.2 2280 (Single-Sided)",
+   "source": "amazon",
+   "asin": "B0B25NXWC7",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Single-sided Gen4 (entry 1TB)",
+    "Best for": "Tight secondary slots & laptops"
+   },
+   "note": "Flat underside clears stacked Wi-Fi cards and tight mini-PC lids without flexing.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-p3-plus-2tb",
+   "group": "fix_nvme",
+   "brand": "Crucial",
+   "name": "Crucial P3 Plus 2TB PCIe Gen4 M.2 2280 (Single-Sided)",
+   "source": "amazon",
+   "asin": "B0BYW8FLKN",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Single-sided Gen4 (2TB sweet spot)",
+    "Best for": "Mini-PC main boot + media volume"
+   },
+   "note": "Single-sided 2TB PCB fits ultra-cramped GMKtec/Beelink slots while doubling capacity.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-p3-plus-4tb",
+   "group": "fix_nvme",
+   "brand": "Crucial",
+   "name": "Crucial P3 Plus 4TB PCIe Gen4 M.2 2280 (Single-Sided)",
+   "source": "amazon",
+   "asin": "B0CCNCW5QX",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Single-sided Gen4 (4TB max fit)",
+    "Best for": "Single-slot mini PCs & all-SSD NAS"
+   },
+   "note": "Confirmed single-sided at 4TB (rare!) — avoids bottom-component crush in slim cases.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-sn850x-1tb",
+   "group": "fix_nvme",
+   "brand": "WD_BLACK",
+   "name": "WD_BLACK SN850X 1TB M.2 2280 (TLC + DRAM, Non-Heatsink)",
+   "source": "amazon",
+   "asin": "B0B7CKVMRV",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Single-sided TLC + DRAM (1TB)",
+    "Best for": "Proxmox OS & VM write endurance"
+   },
+   "note": "Buy the non-heatsink bare version — pre-mounted desktop heatsinks fail mini-PC lid clearance.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-sn850x-2tb",
+   "group": "fix_nvme",
+   "brand": "WD_BLACK",
+   "name": "WD_BLACK SN850X 2TB M.2 2280 (TLC + DRAM, Non-Heatsink)",
+   "source": "amazon",
+   "asin": "B0B7CMZ3QH",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Single-sided TLC + DRAM (2TB)",
+    "Best for": "Proxmox multi-VM + ZFS slog/pool"
+   },
+   "note": "2TB SN850X stays single-sided with 1,200 TBW endurance. (Note: 4TB SN850X turns double-sided.)",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-icepc-graphene-m2",
+   "group": "fix_nvme",
+   "brand": "IcePC",
+   "name": "IcePC M.2 2280 Graphene Copper Heatsink Kit (~1mm Slim)",
+   "source": "amazon",
+   "asin": "B08HGF4HKK",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Ultra-thin ~1mm copper + graphene",
+    "Best for": "Zero-headroom barebone mini PCs"
+   },
+   "note": "Fits slots where rigid finned heatsinks hit the bottom cover or blower shroud.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-jeyi-igraphene",
+   "group": "fix_nvme",
+   "brand": "JEYI",
+   "name": "JEYI iGraphene Ultra-Thin Copper Foil Heatsink Pack (0.5mm-0.8mm)",
+   "source": "amazon",
+   "asin": "B0FQ6R5383",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Sub-1mm copper foil spreaders",
+    "Best for": "Multiple M.2 slots / tight laptops"
+   },
+   "note": "Flexible 0.5mm-class copper-graphene wraps spread controller heat without adding vertical bulk.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-bequiet-mc1",
+   "group": "fix_nvme",
+   "brand": "be quiet!",
+   "name": "be quiet! MC1 Low-Profile M.2 2280 Cooler (non-Pro)",
+   "source": "amazon",
+   "asin": "B08YRSZPH8",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "Low-profile aluminum block",
+    "Best for": "Slots with >=5mm clearance / NAS bays"
+   },
+   "note": "Use the slim MC1 (not tall MC1 Pro) only when you verified >=5mm above the M.2 slot.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-ifixit-moray",
+   "group": "fix_nvme",
+   "brand": "iFixit",
+   "name": "iFixit Moray 32-Bit Precision Driver Kit",
+   "source": "amazon",
+   "asin": "B08NWKMT8V",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "PH0/PH00/Torx precision bits",
+    "Best for": "Preventing stripped M.2 screws"
+   },
+   "note": "Tiny mini-PC bottom-lid and M.2 standoff screws strip fast with kitchen screwdrivers.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-multifan-s3",
+   "group": "fix_nvme",
+   "brand": "AC Infinity",
+   "name": "AC Infinity MULTIFAN S3 120mm Quiet USB Fan",
+   "source": "amazon",
+   "asin": "B00G05A2MU",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Form / Thermal": "External bottom-plate airflow",
+    "Best for": "24/7 Proxmox cluster thermals"
+   },
+   "note": "Moves air directly across a mini-PC chassis when internal heatsink headroom doesn't exist.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-plugable-e2500",
+   "group": "fix_nic",
+   "brand": "Plugable",
+   "name": "Plugable USBC-E2500 2.5GbE Adapter (USB-C + Attached USB-A)",
+   "source": "amazon",
+   "asin": "B084L4JL9K",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Chipset / Driver": "RTL8156B (r8152 kernel native)",
+    "Best for": "Proxmox & Linux reliability"
+   },
+   "note": "Proven r/Proxmox fix replacing flaky off-brand 2.5G dongles. Works on both blue USB-A 3.0 and USB-C ports.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-ugreen-25gbe",
+   "group": "fix_nic",
+   "brand": "UGREEN",
+   "name": "UGREEN USB-C to 2.5GbE Aluminum Adapter",
+   "source": "amazon",
+   "asin": "B0CD1FDKT1",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Chipset / Driver": "RTL8156BG (cooled aluminum)",
+    "Best for": "Budget multi-gig mini-PC link"
+   },
+   "note": "Metal shell reduces thermal packet drops under sustained Linux/Proxmox backups.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-cablematters-25gbe",
+   "group": "fix_nic",
+   "brand": "Cable Matters",
+   "name": "Cable Matters USB-C to 2.5GbE Braided Aluminum Adapter",
+   "source": "amazon",
+   "asin": "B0DHXLGC92",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Chipset / Driver": "RTL8156B + braided lead",
+    "Best for": "Sustained ZFS/NAS transfers"
+   },
+   "note": "Reinforced aluminum heatsink body + braided pigtail to relieve strain in tight racks.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-anker-25gbe",
+   "group": "fix_nic",
+   "brand": "Anker",
+   "name": "Anker PowerExpand USB-C to 2.5Gbps Ethernet Adapter",
+   "source": "amazon",
+   "asin": "B097N5WJY9",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Chipset / Driver": "RTL8156 (r8152 compatible)",
+    "Best for": "Workstation & laptop 2.5G sync"
+   },
+   "note": "Solid backup 2.5GbE option for Linux/macOS/Windows clients hitting your Proxmox/NAS box.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-cat6a-1ft-5pk",
+   "group": "fix_nic",
+   "brand": "Cable Matters",
+   "name": "Cable Matters Shielded Cat6a Patch Cables, 1 ft (5-pack)",
+   "source": "amazon",
+   "asin": "B0CBHM34ZL",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Chipset / Driver": "10Gbps shielded Cat6a",
+    "Best for": "Preventing 1G fallback from bad cables"
+   },
+   "note": "Short pure-copper shielded runs eliminate noisy 2.5G link renegotiation.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-usb-ab-cable",
+   "group": "fix_ups",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics USB 2.0 A-Male to B-Male Data Cable (6 ft)",
+   "source": "amazon",
+   "asin": "B00NH11KIK",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "NUT Driver / Port": "Required USB-B -> USB-A data lead",
+    "Best for": "APC boxes that omit the cable"
+   },
+   "note": "New APC BE850G2/BE600M1 boxes often skip the data cable. Plugs into rear USB-B Data Port, NOT top 5V port.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-apc-be600m1",
+   "group": "fix_ups",
+   "brand": "APC",
+   "name": "APC Back-UPS 600VA / 330W (BE600M1, Rear USB-B Data Port)",
+   "source": "amazon",
+   "asin": "B01FWAZEIU",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "NUT Driver / Port": "usbhid-ups (VID 051d, rear USB-B)",
+    "Best for": "Mini PC + 2-bay NAS graceful shutdown"
+   },
+   "note": "Smallest APC here with real USB-B data port (BE425M & BN650M1 lack data!). Connect rear USB-B for NUT/Synology.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-cyberpower-ec650lcd",
+   "group": "fix_ups",
+   "brand": "CyberPower",
+   "name": "CyberPower EC650LCD 650VA / 390W (USB HID + LCD)",
+   "source": "amazon",
+   "asin": "B00DBAAJQ6",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "NUT Driver / Port": "usbhid-ups (VID 0764) + LCD",
+    "Best for": "Ubuntu / TrueNAS / Synology NUT master"
+   },
+   "note": "Full USB HID support plus front LCD runtime display. Set pollinterval = 15 in ups.conf for rock-solid polling.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-apc-be850g2",
+   "group": "fix_ups",
+   "brand": "APC",
+   "name": "APC Back-UPS 850VA / 450W (BE850G2, 9 Outlets + Rear USB-B)",
+   "source": "amazon",
+   "asin": "B085JJZDFK",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "NUT Driver / Port": "usbhid-ups (VID 051d, rear USB-B)",
+    "Best for": "4-bay DAS/NAS + Mini PC together"
+   },
+   "note": "9 outlets + 450W headroom for multi-bay storage + Ubuntu/Proxmox host. Check box for USB-B cable.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-cyberpower-cp850pfclcd",
+   "group": "fix_ups",
+   "brand": "CyberPower",
+   "name": "CyberPower CP850PFCLCD 850VA / 510W Pure Sinewave",
+   "source": "amazon",
+   "asin": "B00429N18S",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "NUT Driver / Port": "usbhid-ups (VID 0764) Pure Sinewave",
+    "Best for": "Active-PFC PSUs & towers"
+   },
+   "note": "Small pure-sinewave unit prevents Active-PFC server power supplies from dropping mid-switchover.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-cyberpower-cp1500pfclcd",
+   "group": "fix_ups",
+   "brand": "CyberPower",
+   "name": "CyberPower CP1500PFCLCD 1500VA / 1000W Pure Sinewave",
+   "source": "amazon",
+   "asin": "B00429N19W",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "NUT Driver / Port": "usbhid-ups (VID 0764) Pro Sinewave",
+    "Best for": "Full homelab rack / multi-server"
+   },
+   "note": "Step-up tier for multi-node Proxmox + big NAS arrays needing long NUT shutdown windows.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-avlt-vesa-mount",
+   "group": "fix_rack",
+   "brand": "AVLT",
+   "name": "AVLT Mini-PC VESA & Under-Desk Mount (up to 2.76\" thick)",
+   "source": "amazon",
+   "asin": "B08G134G6L",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "Monitor-back / under-desk cradle",
+    "Best for": "Hiding GMKtec / Beelink boxes"
+   },
+   "note": "Clamps onto monitor arm poles, VESA plates, or under desk. Frees desk surface instantly.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-vivo-vesa-bracket",
+   "group": "fix_rack",
+   "brand": "VIVO",
+   "name": "VIVO Steel 75/100mm VESA Extension Bracket",
+   "source": "amazon",
+   "asin": "B07B44VRL2",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "VESA spacer / plate",
+    "Best for": "Thin clients & Intel NUC chassis"
+   },
+   "note": "Low-cost steel plate for standard 75x75 / 100x100mm monitor rear mounts.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-sleclean-tray",
+   "group": "fix_rack",
+   "brand": "Sleclean",
+   "name": "Sleclean No-Drill Clamp-On Under-Desk Power Brick Tray",
+   "source": "amazon",
+   "asin": "B0CD88HK1C",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "No-drill steel brick basket",
+    "Best for": "Supporting heavy mini-PC power bricks"
+   },
+   "note": "Mechanical steel tray holds heavy AC-to-DC bricks without tape sagging or desk drilling.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-anker-331-strip",
+   "group": "fix_rack",
+   "brand": "Anker",
+   "name": "Anker 331 Flat-Plug Power Strip (6 Outlets + 3 USB)",
+   "source": "amazon",
+   "asin": "B08YY9X1JV",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "Flat-plug strip for trays/behind rack",
+    "Best for": "Tight wall/desk clearances"
+   },
+   "note": "Fits inside clamp-on under-desk trays with one clean AC line dropping down a desk leg.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-velcro-50pk",
+   "group": "fix_rack",
+   "brand": "VELCRO Brand",
+   "name": "VELCRO Brand ONE-WRAP Reusable Cable Ties (50-pack)",
+   "source": "amazon",
+   "asin": "B000F5K82A",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "Reusable DC brick & LAN straps",
+    "Best for": "Safe bundling without crushing Cat6"
+   },
+   "note": "Undoable fabric ties let you swap cables cleanly instead of cutting zip ties near fiber/Cat6.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-joto-sleeves",
+   "group": "fix_rack",
+   "brand": "JOTO",
+   "name": "JOTO Zipped Cable Management Sleeves (4-pack)",
+   "source": "amazon",
+   "asin": "B015HWXG4M",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "Single-trunk desk-to-floor loom",
+    "Best for": "Standing desks & pet-proof runs"
+   },
+   "note": "Zips all power and Ethernet drops into one tidy sleeve (set standing desk to max height before zipping!).",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-cat6-3ft-5pk",
+   "group": "fix_rack",
+   "brand": "Cable Matters",
+   "name": "Cable Matters Snagless 3 ft Cat6 Patch Cables (5-pack)",
+   "source": "amazon",
+   "asin": "B00C2CBBAM",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "Exact-length 3 ft LAN jumpers",
+    "Best for": "Killing giant coiled Ethernet loops"
+   },
+   "note": "Replacing 6 ft / 10 ft patch cords inside a mini-rack removes half the clutter immediately.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "fix-hdmi-3ft",
+   "group": "fix_rack",
+   "brand": "Amazon Basics",
+   "name": "Amazon Basics Braided 4K HDMI Cable (3 ft)",
+   "source": "amazon",
+   "asin": "B075ZTJ9XR",
+   "utm": {
+    "utm_campaign": "exp001_fix"
+   },
+   "cols": {
+    "Mount / Cable Fix": "Short monitor-back jumper",
+    "Best for": "VESA-mounted mini PC -> display"
+   },
+   "note": "Short 3 ft lead loops cleanly behind the monitor without hanging below the bezel.",
+   "price": null,
+   "was": null,
+   "checked": null
   }
  ],
  "_awin": {
