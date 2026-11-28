@@ -1763,6 +1763,519 @@
    "price": null,
    "was": null,
    "checked": null
+  },
+  {
+   "id": "samsung-t7-shield-1tb",
+   "group": "w5_ext_ssd",
+   "brand": "Samsung",
+   "name": "Samsung T7 Shield 1TB Portable SSD (USB 3.2 Gen2)",
+   "source": "amazon",
+   "asin": "B09VLK9W3S",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "1TB (entry)",
+    "Best for": "Daily laptop backups and travel"
+   },
+   "note": "IP65 rugged rubber shell, sustained writes without early throttling. Entry tier for documents and photo dumps.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "samsung-t7-shield-2tb",
+   "group": "w5_ext_ssd",
+   "brand": "Samsung",
+   "name": "Samsung T7 Shield 2TB Portable SSD (USB 3.2 Gen2)",
+   "source": "amazon",
+   "asin": "B09VLJK9FP",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "2TB (sweet spot)",
+    "Best for": "4K video, Proxmox backups, cold copies"
+   },
+   "note": "Double the capacity of the 1TB usually at a better price per TB. Best balance for most buyers.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "samsung-t7-shield-4tb",
+   "group": "w5_ext_ssd",
+   "brand": "Samsung",
+   "name": "Samsung T7 Shield 4TB Portable SSD (USB 3.2 Gen2)",
+   "source": "amazon",
+   "asin": "B0BKPV953L",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "4TB (off-site archive)",
+    "Best for": "Full NAS off-site cold backup"
+   },
+   "note": "Holds an entire family photo library plus VM snapshots in one pocketable rugged drive.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "crucial-x9-pro-1tb",
+   "group": "w5_ext_ssd",
+   "brand": "Crucial",
+   "name": "Crucial X9 Pro 1TB Portable SSD (1050MB/s)",
+   "source": "amazon",
+   "asin": "B0C9WKGXHD",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "1TB (ultra-compact)",
+    "Best for": "Shirt-pocket scratch drive"
+   },
+   "note": "Anodized aluminum shell, smaller than a credit card, IP55 rated. Easy carry for a laptop bag.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "crucial-x9-pro-2tb",
+   "group": "w5_ext_ssd",
+   "brand": "Crucial",
+   "name": "Crucial X9 Pro 2TB Portable SSD (1050MB/s)",
+   "source": "amazon",
+   "asin": "B0CCYJ5S1P",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "2TB (sweet spot)",
+    "Best for": "Lightroom catalogs and Mac backups"
+   },
+   "note": "Same tiny aluminum footprint with 2TB of sustained TLC speed. Pick whichever of X9 Pro or T7 Shield is cheaper today.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "crucial-x9-pro-4tb",
+   "group": "w5_ext_ssd",
+   "brand": "Crucial",
+   "name": "Crucial X9 Pro 4TB Portable SSD (1050MB/s)",
+   "source": "amazon",
+   "asin": "B0CCYHX452",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "4TB (max portable)",
+    "Best for": "Video shoots and large offline vaults"
+   },
+   "note": "4TB in a pocket-sized aluminum brick with zero moving parts.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "crucial-p3-plus-1tb",
+   "group": "w5_nvme_ssd",
+   "brand": "Crucial",
+   "name": "Crucial P3 Plus 1TB PCIe Gen4 M.2 NVMe SSD",
+   "source": "amazon",
+   "asin": "B0B25NXWC7",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "1TB (budget Gen4)",
+    "Best for": "Barebone mini PC OS drive"
+   },
+   "note": "Single-sided and cool-running, so it fits tight mini PCs easily. Entry capacity for OS plus light containers.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "crucial-p3-plus-2tb",
+   "group": "w5_nvme_ssd",
+   "brand": "Crucial",
+   "name": "Crucial P3 Plus 2TB PCIe Gen4 M.2 NVMe SSD",
+   "source": "amazon",
+   "asin": "B0BYW8FLKN",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "2TB (budget sweet spot)",
+    "Best for": "Mini PC media and game storage"
+   },
+   "note": "Doubles capacity and TBW endurance over 1TB while staying cool in compact cases.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "crucial-p3-plus-4tb",
+   "group": "w5_nvme_ssd",
+   "brand": "Crucial",
+   "name": "Crucial P3 Plus 4TB PCIe Gen4 M.2 NVMe SSD",
+   "source": "amazon",
+   "asin": "B0CCNCW5QX",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "4TB (single-slot max)",
+    "Best for": "All-SSD mini NAS bays"
+   },
+   "note": "Packs 4TB into one M.2 slot for silent all-SSD boxes like the Beelink ME mini.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "wd-sn850x-1tb",
+   "group": "w5_nvme_ssd",
+   "brand": "WD_BLACK",
+   "name": "WD_BLACK SN850X 1TB PCIe Gen4 M.2 NVMe SSD (TLC + DRAM)",
+   "source": "amazon",
+   "asin": "B0B7CKVMRV",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "1TB (Proxmox / DRAM)",
+    "Best for": "Proxmox OS + VM root pool"
+   },
+   "note": "Real TLC flash + DRAM cache: holds up far better than QLC under constant Proxmox VM writes.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "wd-sn850x-2tb",
+   "group": "w5_nvme_ssd",
+   "brand": "WD_BLACK",
+   "name": "WD_BLACK SN850X 2TB PCIe Gen4 M.2 NVMe SSD (TLC + DRAM)",
+   "source": "amazon",
+   "asin": "B0B7CMZ3QH",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "2TB (Proxmox sweet spot)",
+    "Best for": "Multi-VM homelab or NAS cache"
+   },
+   "note": "High endurance (1,200 TBW) and fast random I/O. The pick if one box runs several VMs and databases.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "wd-sn850x-4tb",
+   "group": "w5_nvme_ssd",
+   "brand": "WD_BLACK",
+   "name": "WD_BLACK SN850X 4TB PCIe Gen4 M.2 NVMe SSD (TLC + DRAM)",
+   "source": "amazon",
+   "asin": "B0B7CQ4D1C",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "4TB (heavy workload)",
+    "Best for": "Heavy ZFS / Proxmox / creator rigs"
+   },
+   "note": "Top-tier 4TB Gen4 drive with 2,400 TBW endurance and DRAM. Double-sided — check clearance in tight mini PCs.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "apc-be425m",
+   "group": "w5_ups",
+   "brand": "APC",
+   "name": "APC Back-UPS 425VA / 255W (BE425M, 6 Outlets)",
+   "source": "amazon",
+   "asin": "B01HDC236Q",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "425VA (entry, no USB data)",
+    "Best for": "Router, modem and Pi"
+   },
+   "note": "Keeps Wi-Fi and a Raspberry Pi up through short flickers. No USB shutdown cable — step up to 600VA+ for a NAS.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "apc-be600m1",
+   "group": "w5_ups",
+   "brand": "APC",
+   "name": "APC Back-UPS 600VA / 330W (BE600M1, 7 Outlets + USB)",
+   "source": "amazon",
+   "asin": "B01FWAZEIU",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "600VA (mini PC + 2-bay NAS)",
+    "Best for": "Small homelab + clean shutdown"
+   },
+   "note": "Adds a USB data port for automatic NUT/NAS graceful shutdown plus replaceable battery.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cyberpower-st625u",
+   "group": "w5_ups",
+   "brand": "CyberPower",
+   "name": "CyberPower ST625U Standby UPS 625VA / 360W (8 Outlets)",
+   "source": "amazon",
+   "asin": "B07GZR9DSK",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "625VA (compact alternative)",
+    "Best for": "Mini PC, switch and router"
+   },
+   "note": "Eight outlets in a compact strip footprint. Compare price directly against the APC BE600M1.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "apc-be850g2",
+   "group": "w5_ups",
+   "brand": "APC",
+   "name": "APC Back-UPS 850VA / 450W (BE850G2, 9 Outlets + USB)",
+   "source": "amazon",
+   "asin": "B085JJZDFK",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "850VA (4-bay NAS + mini PC)",
+    "Best for": "Multi-box homelab corner"
+   },
+   "note": "Enough headroom for a 4-bay NAS, a mini PC and a switch to shut down cleanly together.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cyberpower-cp1500pfclcd",
+   "group": "w5_ups",
+   "brand": "CyberPower",
+   "name": "CyberPower CP1500PFCLCD PFC Sinewave UPS 1500VA / 1000W",
+   "source": "amazon",
+   "asin": "B00429N19W",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "1500VA (pure sinewave pro)",
+    "Best for": "Full rack, workstation or active-PFC PSUs"
+   },
+   "note": "Pure sinewave output, LCD watt readout, and USB NUT support. Step up here if you run a tower server or big NAS.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-313-10k",
+   "group": "w5_powerbanks",
+   "brand": "Anker",
+   "name": "Anker 313 Power Bank (PowerCore Slim 10,000mAh)",
+   "source": "amazon",
+   "asin": "B07QXV6N1B",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "10,000mAh (budget classic)",
+    "Best for": "Basic phone top-ups under $30"
+   },
+   "note": "Slim, durable everyday pack from Anker. Good entry pick for keeping in a jacket or backpack.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "anker-zolo-10k-30w",
+   "group": "w5_powerbanks",
+   "brand": "Anker",
+   "name": "Anker Zolo 10,000mAh 30W Power Bank (Built-In USB-C Cable)",
+   "source": "amazon",
+   "asin": "B0CZ9M6X8Q",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "10,000mAh / 30W PD",
+    "Best for": "Fast phone charging, no loose cord"
+   },
+   "note": "30W fast charging plus a built-in braided USB-C strap cable so you never forget a cord.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "iniu-10k-22w",
+   "group": "w5_powerbanks",
+   "brand": "INIU",
+   "name": "INIU 10,000mAh 22.5W Slim USB-C Power Bank",
+   "source": "amazon",
+   "asin": "B07PNL5STG",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "10,000mAh / 22.5W",
+    "Best for": "Value pocket pack under $30"
+   },
+   "note": "USB-C in/out plus two USB-A ports and a clear battery percentage readout.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "iniu-20k-22w",
+   "group": "w5_powerbanks",
+   "brand": "INIU",
+   "name": "INIU 20,000mAh 22.5W USB-C Power Bank",
+   "source": "amazon",
+   "asin": "B07QN8TXST",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "20,000mAh / 22.5W (weekend step-up)",
+    "Best for": "Multi-day travel or two phones"
+   },
+   "note": "Double the capacity for weekend trips or power outages while staying airline-legal.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "iniu-20k-65w-laptop",
+   "group": "w5_powerbanks",
+   "brand": "INIU",
+   "name": "INIU 20,000mAh 65W Laptop Power Bank (BI-B62)",
+   "source": "amazon",
+   "asin": "B0CB1DTFT6",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "20,000mAh / 65W PD (laptop step-up)",
+    "Best for": "MacBook, Steam Deck, USB-C laptops"
+   },
+   "note": "Step-up variant if you need full 65W PD output to run a laptop or Steam Deck away from an outlet.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-usb3-switch-2in4out",
+   "group": "w5_kvm",
+   "brand": "UGREEN",
+   "name": "UGREEN USB 3.0 Switch Selector (2 Computers, 4 Shared Ports)",
+   "source": "amazon",
+   "asin": "B01N6GD9JO",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "USB-only (cheapest)",
+    "Best for": "Sharing keyboard, mouse and webcam"
+   },
+   "note": "One button flips four USB 3.0 devices between a work laptop and a homelab mini PC. Monitor switches inputs separately.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-usb3-switch-remote",
+   "group": "w5_kvm",
+   "brand": "UGREEN",
+   "name": "UGREEN USB 3.0 Sharing Switch with Desktop Controller",
+   "source": "amazon",
+   "asin": "B0C8MSP967",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "USB + wired desk button",
+    "Best for": "Hiding the cable hub under the desk"
+   },
+   "note": "Tuck the switch box out of sight and keep only the tiny wired button on top of your desk.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "cablematters-usb3-switch",
+   "group": "w5_kvm",
+   "brand": "Cable Matters",
+   "name": "Cable Matters 4-Port USB 3.0 Sharing Switch",
+   "source": "amazon",
+   "asin": "B083JKDNRJ",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "USB 3.0 + RF remote",
+    "Best for": "Clean desk setups"
+   },
+   "note": "Includes wireless remote and optional USB-C power input for power-hungry webcams or DACs.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ablewe-hdmi-kvm-2port",
+   "group": "w5_kvm",
+   "brand": "ABLEWE",
+   "name": "ABLEWE 2-Port 4K HDMI KVM Switch Box",
+   "source": "amazon",
+   "asin": "B08NVKHRRT",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "Budget HDMI + USB KVM",
+    "Best for": "Switching monitor + keyboard together"
+   },
+   "note": "Switches both HDMI display and USB peripherals between two PCs with one press.",
+   "price": null,
+   "was": null,
+   "checked": null
+  },
+  {
+   "id": "ugreen-hdmi-kvm-4k60",
+   "group": "w5_kvm",
+   "brand": "UGREEN",
+   "name": "UGREEN 2-Port 4K@60Hz HDMI KVM Switch (USB 3.0)",
+   "source": "amazon",
+   "asin": "B0DC5ZZMKD",
+   "utm": {
+    "utm_campaign": "exp001_w5"
+   },
+   "cols": {
+    "Tier": "4K@60Hz + USB 3.0 step-up",
+    "Best for": "Daily dual-PC work + homelab desk"
+   },
+   "note": "Full 4K 60Hz HDMI plus fast USB 3.0 ports and desktop button. Step up here if you switch screens all day.",
+   "price": null,
+   "was": null,
+   "checked": null
   }
  ],
  "_awin": {
