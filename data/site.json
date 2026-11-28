@@ -8,6 +8,12 @@
   "clarity_id": "zkhv4f8n7g",
   "goatcounter_code": "cheapass"
  },
+ "community": {
+  "_readme": "Public invite links shown in the site header bar. Empty fields stay hidden.",
+  "x_url": "https://x.com/CheapAssHomelab",
+  "telegram_url": "",
+  "discord_url": ""
+ },
  "seasons": [
   {"from": "2026-11-20", "to": "2026-11-26", "heading": "Black Friday deals, live early", "note": "Black Friday is Friday, Nov 27. Cyber Monday is Nov 30. These brands started early. None of them posts an end date, so if you see a price you like, don't wait for Friday."},
   {"from": "2026-11-27", "to": "2026-11-29", "heading": "Black Friday deals", "note": "Black Friday weekend. Cyber Monday is Nov 30. The brands don't post end dates, so prices can change any hour."},
