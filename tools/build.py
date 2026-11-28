@@ -103,7 +103,7 @@ class Ctx:
 
 def price_cell(c, it):
     if it.get("source") == "amazon":
-        return c.link(it, "Check price on Amazon \u2192", cls="cta")
+        return c.link(it, "Check Amazon price & coupons \u2192", cls="cta")
     if not fresh(it):
         return c.link(it, "See today's price")
     s = f"<b>${it['price']:,.2f}</b>"
@@ -220,8 +220,8 @@ def build_page(c, src):
     if has_amazon:
         disclosure = ('<p class="note">As an Amazon Associate I earn from qualifying purchases. '
                       f'<b>Picks reviewed: {TODAY.isoformat()}.</b> '
-                      'Product links on this page go to Amazon; prices are not shown here because Amazon '
-                      'changes them by the hour. Check the live price on Amazon before you buy.</p>')
+                      'Check Amazon for today\'s price &amp; clippable coupons — prices change by the hour. '
+                      '<b>Tip:</b> Look for the green clippable coupon box under the price before adding to cart.</p>')
     elif has_products:
         disclosure = ('<p class="note">Some links on this page may be affiliate links. If you buy '
                       'through them, CheapAss may earn a commission at no extra cost to you. '
