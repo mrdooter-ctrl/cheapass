@@ -1,0 +1,16 @@
+<!-- {"title": "UPS battery backup variant ladder for NAS & mini PCs: 425VA to 1500VA | CheapAss", "description": "Step-by-step UPS sizing ladder from 425VA router backups to 600VA/850VA NAS units and 1500VA pure sinewave CyberPower models, with direct Amazon links per tier.", "faq": [["Why not just buy the cheapest 425VA UPS for my NAS?", "Most 425VA entry models skip the USB data port, so your NAS cannot detect a power outage and shut down automatically. Step up to 600VA (like APC BE600M1) or higher for USB graceful shutdown."], ["Do I need pure sinewave (1500VA)?", "Not for a 2-bay NAS or mini PC with an external power brick. Pure sinewave (like CyberPower CP1500PFCLCD) matters if you run a tower server, workstation PSU with active PFC, or multiple servers on one unit."], ["How long does a UPS battery last?", "Usually 3 to 5 years before the lead-acid cell needs a cheap replacement battery. The electronics last much longer."]]} -->
+<h1>UPS battery backup variant ladder: 425VA to 1500VA</h1>
+<p class="tag">One storm can corrupt a NAS array. Size the UPS to your exact gear.</p>
+<p class="sale">{{SEASON}}</p>
+<p>You don't need a massive battery to keep Plex running for hours — you just need 5 to 10 clean minutes plus a USB cable so your NAS shuts itself down safely. Pick the tier below that matches what's plugged into your wall.</p>
+<h2>What changes as you step up</h2>
+<ul>
+<li><b>425VA (Router / Pi only):</b> Keeps Wi-Fi and a Raspberry Pi alive through power blinks. No USB shutdown port.</li>
+<li><b>600VA–625VA (Sweet spot for 2-bay NAS + mini PC):</b> Adds USB data signaling for automatic NAS/NUT shutdown.</li>
+<li><b>850VA (4-bay NAS + mini PC + switch):</b> Extra headroom when spinning 4 drives plus a server.</li>
+<li><b>1500VA Pure Sinewave:</b> For full racks, desktop towers, and active-PFC power supplies — includes live watt LCD readout.</li>
+</ul>
+<h2>Every VA tier</h2>
+{{TABLE:w5_ups}}
+<p class="complete"><b>Complete the setup:</b> measure your exact wall draw first with <a href="{{ROOT}}deals/surge-protectors-power-meters-under-30.html">Kill A Watt meters under $30</a> or <a href="{{ROOT}}deals/smart-plugs-power-under-30.html">energy-monitoring smart plugs under $30</a>. Need the full sizing walkthrough? Read <a href="{{ROOT}}guides/ups-for-nas.html">which UPS your NAS needs</a> and <a href="{{ROOT}}guides/budget-3-2-1-backup.html">budget 3-2-1 backup guide</a>.</p>
+<p><small>See <a href="{{ROOT}}index.html#ladders">all variant ladders</a> or <a href="{{ROOT}}index.html#under-30">all under-$30 roundups</a>.</small></p>
