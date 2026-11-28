@@ -3,9 +3,10 @@
  "google_site_verification": "91UfakA9Ba9zV5V_xalPakTi9GctIQcD5MZqdWn_8v8",
  "analytics": {
   "_readme": "Paste public measurement IDs here and run tools/build.py. Empty fields inject nothing.",
-  "ga4_id": "",
-  "clarity_id": "",
-  "goatcounter_code": ""
+  "ga4_id": "G-YDYY2TYLDX",
+  "gtm_id_ref": "GTM-WDG6M9WM",
+  "clarity_id": "zkhv4f8n7g",
+  "goatcounter_code": "cheapass"
  },
  "seasons": [
   {"from": "2026-11-20", "to": "2026-11-26", "heading": "Black Friday deals, live early", "note": "Black Friday is Friday, Nov 27. Cyber Monday is Nov 30. These brands started early. None of them posts an end date, so if you see a price you like, don't wait for Friday."},
