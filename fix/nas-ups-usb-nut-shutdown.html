@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fix NAS, Ubuntu &amp; Proxmox UPS Automatic USB Shutdown (NUT-Verified BOM) | CheapAss</title>
+<meta name="description" content="Why NUT usbhid-ups fails to see cheap UPS boxes (disqualifying no-data APC BE425M &amp; BN650M1 units), rear USB-B vs top USB-A charging trap, and CyberPower pollinterval fix.">
+<link rel="canonical" href="https://mrdooter-ctrl.github.io/cheapass/fix/nas-ups-usb-nut-shutdown.html">
+<meta name="google-site-verification" content="91UfakA9Ba9zV5V_xalPakTi9GctIQcD5MZqdWn_8v8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YDYY2TYLDX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-YDYY2TYLDX");document.addEventListener("click",function(ev){var a=ev.target.closest&&ev.target.closest("a[href*=\"amazon.com\"]");if(a){gtag("event","amazon_outbound_click",{link_url:a.href,page_path:location.pathname});}});</script>
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","zkhv4f8n7g");</script>
+<script data-goatcounter="https://cheapass.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why won't APC BE425M or BN650M1 shut down my NAS via USB?", "acceptedAnswer": {"@type": "Answer", "text": "Both the BE425M and BN650M1 have ZERO USB data communication capability (BN650M1's top USB-A port is 5V phone-charging only and is explicitly marked unsupported for software shutdown in APC's manual). You need BE600M1/BE850G2 or CyberPower EC/PFC units with a rear USB-B Data Port."}}, {"@type": "Question", "name": "Where do I plug the USB cable into APC BE600M1 or BE850G2?", "acceptedAnswer": {"@type": "Answer", "text": "Plug into the square USB Type-B Data Port on the rear/side panel, NEVER the front/top USB-A charging slot. Newer APC boxes often omit the USB-A to USB-B cable, so keep a standard $6 printer cable handy."}}, {"@type": "Question", "name": "Why does CyberPower throw 'Data stale' warnings in NUT?", "acceptedAnswer": {"@type": "Answer", "text": "CyberPower USB HID controllers sometimes reset if not polled frequently. Add 'pollinterval = 15' inside /etc/nut/ups.conf alongside usbhid-ups (Vendor ID 0764)."}}, {"@type": "Question", "name": "When should I pay extra for Pure Sinewave (CP850PFCLCD / CP1500PFCLCD)?", "acceptedAnswer": {"@type": "Answer", "text": "If you run a desktop tower PSU with Active PFC, a Ryzen/Core workstation, or want zero risk of a hard-power trip during battery switchover, pick a PFC Sinewave model."}}]}</script>
+<style>
+body{font-family:Georgia,serif;max-width:780px;margin:0 auto;padding:14px 16px;background:#fff;color:#111;line-height:1.5}
+h1{font-size:1.55em;margin:.2em 0 .15em} h2{font-size:1.2em;margin-top:1.4em} .tag{color:#555;margin:2px 0 10px}
+.brand{font-weight:bold;color:#111;text-decoration:none} nav{font-size:.9em;margin-bottom:6px;line-height:1.8} nav a{margin-right:10px}
+.comm{font-size:.86em;color:#444;margin:0 0 8px} .comm a{margin-right:8px}
+.note{background:#ffffcc;border:1px solid #cc9;padding:6px 8px;font-size:.86em;margin:6px 0 10px} .sale{background:#111;color:#fff;padding:7px 10px;font-weight:bold;margin:8px 0}
+.complete{background:#f7f7f7;border:1px solid #ddd;padding:10px 12px;margin:14px 0;font-size:.93em}
+.cta{display:inline-block;background:#111;color:#fff !important;padding:5px 10px;border-radius:4px;text-decoration:none;font-family:system-ui,-apple-system,sans-serif;font-size:.84em;font-weight:600;white-space:nowrap}
+.cta:hover{background:#333}
+.wrap{overflow-x:auto} table{border-collapse:collapse;width:100%;margin:10px 0;font-size:.95em}
+td,th{border-bottom:1px solid #ddd;padding:7px 5px;text-align:left;vertical-align:top} th{font-size:.85em;color:#555}
+.was{color:#888;text-decoration:line-through} .pct{color:#060;font-weight:bold} a{color:#00c} small{color:#666}
+label{display:block;margin:6px 0} input{font:inherit;width:7em} .out{font-size:1.1em;background:#f4f4f4;padding:8px}
+@media (prefers-color-scheme: dark){body{background:#111;color:#eee}.brand{color:#eee}.sale{background:#eee;color:#111}.note{background:#332;border-color:#665}.complete{background:#1c1c1c;border-color:#333}.cta{background:#f0c14b;color:#111 !important}.cta:hover{background:#ffd262}td,th{border-color:#333}a{color:#8af}.tag,th,small{color:#aaa}.out{background:#222}input{background:#222;color:#eee;border:1px solid #555}}
+</style>
+</head>
+<body>
+<nav><a class="brand" href="../index.html">CheapAss</a> <a href="../deals/gmktec.html">GMKtec</a><a href="../deals/beelink.html">Beelink</a><a href="../deals/unifydrive.html">UnifyDrive</a><a href="../guides/cheap-nas.html">NAS guide</a><a href="../guides/mini-pc-homelab.html">Mini PC guide</a><a href="../guides/index.html">All guides</a><a href="../index.html#under-30">Under $30</a><a href="../index.html#ladders">Ladders</a><a href="../index.html#fixes">Fix BOMs</a></nav>
+<p class="comm"><b>Get daily deal drops:</b> <a href="https://x.com/CheapAssHomelab" rel="noopener" target="_blank">X (@CheapAssHomelab)</a></p>
+<p class="note">As an Amazon Associate I earn from qualifying purchases. <b>Picks reviewed: 2026-11-27.</b> Check Amazon for today's price &amp; clippable coupons — prices change by the hour. <b>Tip:</b> Look for the green clippable coupon box under the price before adding to cart.</p>
+<h1>Fix NAS &amp; Linux UPS automatic USB shutdown (NUT BOM)</h1>
+<p class="tag">Don't buy a UPS whose "USB port" only charges phones. Use verified <code>usbhid-ups</code> HID hardware.</p>
+<p class="sale">Black Friday deals</p>
+<p>A power outage while RAID/ZFS or a USB DAS is mid-write can corrupt volumes faster than a bad disk. Worse: buyers keep ordering cheap UPS units only to discover there is <b>no USB data port</b> inside the chassis.</p>
+<p><b>Disqualified for NAS/NUT auto-shutdown (skip these):</b> <b>APC BE425M</b> (no data port) and <b>APC BN650M1</b> (USB-A slot is 5V phone-charging only — no PowerChute/NUT data signaling).</p>
+<h2>60-second NUT / Synology / TrueNAS checklist</h2>
+<ol>
+<li><b>Use the rear USB Type-B Data Port:</b> Ignore top/front USB-A charging slots. If your APC box omitted the lead, grab an ordinary USB-A to USB-B data cable.</li>
+<li><b>Verify OS visibility before touching config:</b> Run <code>lsusb</code> and look for <code>051d</code> (APC) or <code>0764</code> (CyberPower).</li>
+<li><b>Set <code>ups.conf</code> cleanly (fixes CyberPower <code>Data stale</code> resets):</b>
+<pre><code>[ups]
+  driver = usbhid-ups
+  port = auto
+  pollinterval = 15</code></pre></li>
+<li><b>Wait 2–3 minutes before triggering shutdown</b> so short grid flickers don't needlessly power-cycle your server.</li>
+</ol>
+<h2>NUT-verified USB HID UPS &amp; cable ladder</h2>
+<p>Every UPS below has a real USB HID data port verified for <code>usbhid-ups</code> (plus the missing A-to-B cable). Check Amazon for today's price &amp; clippable coupons before adding to cart.</p>
+<div class="wrap"><table>
+<tr><th>Product</th><th>Price</th><th>NUT Driver / Port</th><th>Best for</th><th>Why it's here</th></tr>
+<tr><td><a href="https://www.amazon.com/dp/B00NH11KIK?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">Amazon Basics USB 2.0 A-Male to B-Male Data Cable (6 ft)</a></td><td><a class="cta" href="https://www.amazon.com/dp/B00NH11KIK?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">Check Amazon price &amp; coupons →</a></td><td>Required USB-B -&gt; USB-A data lead</td><td>APC boxes that omit the cable</td><td>New APC BE850G2/BE600M1 boxes often skip the data cable. Plugs into rear USB-B Data Port, NOT top 5V port.</td></tr>
+<tr><td><a href="https://www.amazon.com/dp/B01FWAZEIU?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">APC Back-UPS 600VA / 330W (BE600M1, Rear USB-B Data Port)</a></td><td><a class="cta" href="https://www.amazon.com/dp/B01FWAZEIU?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">Check Amazon price &amp; coupons →</a></td><td>usbhid-ups (VID 051d, rear USB-B)</td><td>Mini PC + 2-bay NAS graceful shutdown</td><td>Smallest APC here with real USB-B data port (BE425M &amp; BN650M1 lack data!). Connect rear USB-B for NUT/Synology.</td></tr>
+<tr><td><a href="https://www.amazon.com/dp/B00DBAAJQ6?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">CyberPower EC650LCD 650VA / 390W (USB HID + LCD)</a></td><td><a class="cta" href="https://www.amazon.com/dp/B00DBAAJQ6?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">Check Amazon price &amp; coupons →</a></td><td>usbhid-ups (VID 0764) + LCD</td><td>Ubuntu / TrueNAS / Synology NUT master</td><td>Full USB HID support plus front LCD runtime display. Set pollinterval = 15 in ups.conf for rock-solid polling.</td></tr>
+<tr><td><a href="https://www.amazon.com/dp/B085JJZDFK?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">APC Back-UPS 850VA / 450W (BE850G2, 9 Outlets + Rear USB-B)</a></td><td><a class="cta" href="https://www.amazon.com/dp/B085JJZDFK?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">Check Amazon price &amp; coupons →</a></td><td>usbhid-ups (VID 051d, rear USB-B)</td><td>4-bay DAS/NAS + Mini PC together</td><td>9 outlets + 450W headroom for multi-bay storage + Ubuntu/Proxmox host. Check box for USB-B cable.</td></tr>
+<tr><td><a href="https://www.amazon.com/dp/B00429N18S?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">CyberPower CP850PFCLCD 850VA / 510W Pure Sinewave</a></td><td><a class="cta" href="https://www.amazon.com/dp/B00429N18S?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">Check Amazon price &amp; coupons →</a></td><td>usbhid-ups (VID 0764) Pure Sinewave</td><td>Active-PFC PSUs &amp; towers</td><td>Small pure-sinewave unit prevents Active-PFC server power supplies from dropping mid-switchover.</td></tr>
+<tr><td><a href="https://www.amazon.com/dp/B00429N19W?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">CyberPower CP1500PFCLCD 1500VA / 1000W Pure Sinewave</a></td><td><a class="cta" href="https://www.amazon.com/dp/B00429N19W?tag=cheapass00-20&amp;utm_source=cheapass&amp;utm_campaign=exp001_fix" rel="sponsored nofollow">Check Amazon price &amp; coupons →</a></td><td>usbhid-ups (VID 0764) Pro Sinewave</td><td>Full homelab rack / multi-server</td><td>Step-up tier for multi-node Proxmox + big NAS arrays needing long NUT shutdown windows.</td></tr>
+</table></div>
+<p class="complete"><b>Next checks:</b> compare VA tiers in full on our <a href="../deals/ups-battery-backup-variant-ladder.html">425VA–1500VA UPS variant ladder</a>, measure real wall draw with a <a href="../deals/surge-protectors-power-meters-under-30.html">Kill A Watt meter</a>, or read <a href="../guides/ups-for-nas.html">sizing a UPS for your NAS</a>.</p>
+<p><small>See <a href="../index.html#fixes">all /fix/ hardware BOMs</a> or <a href="../index.html#ladders">variant ladders</a>.</small></p>
+
+<h2>FAQ</h2>
+<h3>Why won&#x27;t APC BE425M or BN650M1 shut down my NAS via USB?</h3>
+<p>Both the BE425M and BN650M1 have ZERO USB data communication capability (BN650M1&#x27;s top USB-A port is 5V phone-charging only and is explicitly marked unsupported for software shutdown in APC&#x27;s manual). You need BE600M1/BE850G2 or CyberPower EC/PFC units with a rear USB-B Data Port.</p>
+<h3>Where do I plug the USB cable into APC BE600M1 or BE850G2?</h3>
+<p>Plug into the square USB Type-B Data Port on the rear/side panel, NEVER the front/top USB-A charging slot. Newer APC boxes often omit the USB-A to USB-B cable, so keep a standard $6 printer cable handy.</p>
+<h3>Why does CyberPower throw &#x27;Data stale&#x27; warnings in NUT?</h3>
+<p>CyberPower USB HID controllers sometimes reset if not polled frequently. Add &#x27;pollinterval = 15&#x27; inside /etc/nut/ups.conf alongside usbhid-ups (Vendor ID 0764).</p>
+<h3>When should I pay extra for Pure Sinewave (CP850PFCLCD / CP1500PFCLCD)?</h3>
+<p>If you run a desktop tower PSU with Active PFC, a Ryzen/Core workstation, or want zero risk of a hard-power trip during battery switchover, pick a PFC Sinewave model.</p>
+<hr>
+<p><small>CheapAss is a one-person deal list. No sponsored rankings. If a deal dies, it comes off the page. As an Amazon Associate, CheapAss earns from qualifying purchases. Page built 2026-11-27.</small></p>
+</body>
+</html>

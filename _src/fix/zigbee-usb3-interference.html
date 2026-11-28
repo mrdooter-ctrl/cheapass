@@ -1,0 +1,17 @@
+<!-- {"title": "Fix Zigbee & Thread USB 3.0 Interference Drops (BOM + Diagnostic) | CheapAss", "description": "Why Zigbee devices drop offline next to a mini PC or Raspberry Pi, the 60-second USB 2.0 isolation diagnostic, and verified extension + coordinator BOM.", "faq": [["Why do my Zigbee sensors keep dropping offline when plugged into a mini PC?", "USB 3.0 ports, cables, and NVMe SSDs radiate broadband electromagnetic noise right in the 2.4GHz band used by Zigbee and Thread. Plugging a USB 3.0 extension cable does not fix it because the SuperSpeed data lines inside the cable leak noise too."], ["Should I pick ZBDongle-P or ZBDongle-E?", "Pick ZBDongle-P (TI CC2652P) if you run Zigbee2MQTT or want the longest-proven coordinator. Pick ZBDongle-E (Silicon Labs EFR32MG21) if you want ZHA or plan to test Matter-over-Thread firmware."], ["What if my mini PC only has blue USB 3.0 ports?", "Drop a cheap USB 2.0 hub (no USB 3.0 lanes inside) onto the host port, then run a 6 ft USB 2.0 extension cable out to the coordinator so no SuperSpeed lines run near the antenna."]]} -->
+<h1>Fix Zigbee &amp; Thread USB 3.0 interference drops</h1>
+<p class="tag">Sensors dropping offline or low LQI? Isolate the 2.4GHz radio from USB 3.0 noise in two minutes.</p>
+<p class="sale">{{SEASON}}</p>
+<p>Every week builders blame dead batteries or a bad coordinator when USB 3.0 SuperSpeed noise is drowning out their Zigbee radio at 2.4GHz. Run the 60-second software check below before buying a single thing.</p>
+<h2>60-second diagnostic (check these first)</h2>
+<ol>
+<li><b>Move the stick at least 1–2 meters away</b> from the mini PC chassis, SSD enclosures, and power bricks using a <b>USB 2.0</b> extension cable (not a blue USB 3.0 extension).</li>
+<li><b>Plug into a black USB 2.0 host port</b> if your box has one — USB 2.0 ports do not generate 2.4GHz SuperSpeed RF hash. (No USB 2.0 port? Put a cheap passive USB 2.0 hub in front of the extension.)</li>
+<li><b>Separate Wi-Fi and Zigbee channels:</b> Lock 2.4GHz Wi-Fi to channel <code>1</code> or <code>6</code> (20MHz width) and run Zigbee on channel <code>25</code> or <code>20</code>.</li>
+<li><b>Add 2–3 mains-powered Zigbee routers</b> (smart plugs/switches) between the coordinator and battery end-devices.</li>
+</ol>
+<h2>Verified isolation &amp; coordinator BOM</h2>
+<p>Every SKU below links to its exact Amazon product variant. Tip: Check Amazon for today's price &amp; clippable coupons on the product page before adding to cart.</p>
+{{TABLE:fix_zigbee}}
+<p class="complete"><b>Next checks:</b> add mains-powered mesh repeaters or monitor power with <a href="{{ROOT}}deals/smart-plugs-power-under-30.html">smart plugs under $30</a>, or check all coordinators on <a href="{{ROOT}}deals/zigbee-thread-usb-dongles-under-30.html">Zigbee and Bluetooth dongles under $30</a>. Building the host? See <a href="{{ROOT}}q/mini-pc-for-home-assistant.html">cheapest mini PC for Home Assistant</a>.</p>
+<p><small>See <a href="{{ROOT}}index.html#fixes">all /fix/ hardware BOMs</a> or <a href="{{ROOT}}index.html#ladders">variant ladders</a>.</small></p>

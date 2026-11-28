@@ -1,0 +1,22 @@
+<!-- {"title": "Fix NAS, Ubuntu & Proxmox UPS Automatic USB Shutdown (NUT-Verified BOM) | CheapAss", "description": "Why NUT usbhid-ups fails to see cheap UPS boxes (disqualifying no-data APC BE425M & BN650M1 units), rear USB-B vs top USB-A charging trap, and CyberPower pollinterval fix.", "faq": [["Why won't APC BE425M or BN650M1 shut down my NAS via USB?", "Both the BE425M and BN650M1 have ZERO USB data communication capability (BN650M1's top USB-A port is 5V phone-charging only and is explicitly marked unsupported for software shutdown in APC's manual). You need BE600M1/BE850G2 or CyberPower EC/PFC units with a rear USB-B Data Port."], ["Where do I plug the USB cable into APC BE600M1 or BE850G2?", "Plug into the square USB Type-B Data Port on the rear/side panel, NEVER the front/top USB-A charging slot. Newer APC boxes often omit the USB-A to USB-B cable, so keep a standard $6 printer cable handy."], ["Why does CyberPower throw 'Data stale' warnings in NUT?", "CyberPower USB HID controllers sometimes reset if not polled frequently. Add 'pollinterval = 15' inside /etc/nut/ups.conf alongside usbhid-ups (Vendor ID 0764)."], ["When should I pay extra for Pure Sinewave (CP850PFCLCD / CP1500PFCLCD)?", "If you run a desktop tower PSU with Active PFC, a Ryzen/Core workstation, or want zero risk of a hard-power trip during battery switchover, pick a PFC Sinewave model."]]} -->
+<h1>Fix NAS &amp; Linux UPS automatic USB shutdown (NUT BOM)</h1>
+<p class="tag">Don't buy a UPS whose "USB port" only charges phones. Use verified <code>usbhid-ups</code> HID hardware.</p>
+<p class="sale">{{SEASON}}</p>
+<p>A power outage while RAID/ZFS or a USB DAS is mid-write can corrupt volumes faster than a bad disk. Worse: buyers keep ordering cheap UPS units only to discover there is <b>no USB data port</b> inside the chassis.</p>
+<p><b>Disqualified for NAS/NUT auto-shutdown (skip these):</b> <b>APC BE425M</b> (no data port) and <b>APC BN650M1</b> (USB-A slot is 5V phone-charging only — no PowerChute/NUT data signaling).</p>
+<h2>60-second NUT / Synology / TrueNAS checklist</h2>
+<ol>
+<li><b>Use the rear USB Type-B Data Port:</b> Ignore top/front USB-A charging slots. If your APC box omitted the lead, grab an ordinary USB-A to USB-B data cable.</li>
+<li><b>Verify OS visibility before touching config:</b> Run <code>lsusb</code> and look for <code>051d</code> (APC) or <code>0764</code> (CyberPower).</li>
+<li><b>Set <code>ups.conf</code> cleanly (fixes CyberPower <code>Data stale</code> resets):</b>
+<pre><code>[ups]
+  driver = usbhid-ups
+  port = auto
+  pollinterval = 15</code></pre></li>
+<li><b>Wait 2–3 minutes before triggering shutdown</b> so short grid flickers don't needlessly power-cycle your server.</li>
+</ol>
+<h2>NUT-verified USB HID UPS &amp; cable ladder</h2>
+<p>Every UPS below has a real USB HID data port verified for <code>usbhid-ups</code> (plus the missing A-to-B cable). Check Amazon for today's price &amp; clippable coupons before adding to cart.</p>
+{{TABLE:fix_ups}}
+<p class="complete"><b>Next checks:</b> compare VA tiers in full on our <a href="{{ROOT}}deals/ups-battery-backup-variant-ladder.html">425VA–1500VA UPS variant ladder</a>, measure real wall draw with a <a href="{{ROOT}}deals/surge-protectors-power-meters-under-30.html">Kill A Watt meter</a>, or read <a href="{{ROOT}}guides/ups-for-nas.html">sizing a UPS for your NAS</a>.</p>
+<p><small>See <a href="{{ROOT}}index.html#fixes">all /fix/ hardware BOMs</a> or <a href="{{ROOT}}index.html#ladders">variant ladders</a>.</small></p>

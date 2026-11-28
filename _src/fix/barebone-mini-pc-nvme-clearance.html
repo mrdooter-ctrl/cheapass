@@ -1,0 +1,17 @@
+<!-- {"title": "Fix Barebone Mini-PC M.2 NVMe Clearance & Thermal Throttling (BOM) | CheapAss", "description": "Which M.2 2280 SSDs and sub-1mm copper-graphene heatsinks actually fit tight GMKtec, Beelink and Minisforum mini PC slots without crushing the bottom cover.", "faq": [["Will a desktop NVMe SSD with a pre-installed heatsink fit a mini PC?", "Almost never. Most mini PCs leave only 0.5mm to 5mm between the M.2 slot and the bottom cover or fan shroud. Buy a bare drive and add a 0.5mm–1mm copper-graphene spreader unless you measured >=5mm clearance."], ["Why does single-sided matter up to 4TB?", "Many 2TB and almost all 4TB SSDs put NAND chips on the underside of the PCB (double-sided), which crushes against underlying Wi-Fi cards or motherboard standoffs in mini PCs. Crucial P3 Plus stays single-sided even at 4TB; WD_BLACK SN850X stays single-sided at 1TB and 2TB."], ["Do I need special screws to install an M.2 drive?", "Mini PC lid and M.2 standoff screws are soft and tiny (PH0/PH00). Using an oversized household driver strips the screw head on your first upgrade."]]} -->
+<h1>Fix barebone mini-PC M.2 NVMe clearance &amp; thermal throttling</h1>
+<p class="tag">Stop buying chunky heatsinks and double-sided SSDs that trap the bottom cover open.</p>
+<p class="sale">{{SEASON}}</p>
+<p>Barebone GMKtec, Beelink, and Minisforum mini PCs leave razor-thin headroom over the M.2 2280 slots — often <b>0.5mm to 4mm</b> total. Pre-installed desktop heatsinks won't close the lid, and stacked double-sided drives bend onto Wi-Fi cards.</p>
+<h2>60-second fitment checklist (before you open the chassis)</h2>
+<ol>
+<li><b>Pick single-sided NAND:</b> Use single-sided M.2 2280 drives (<code>Crucial P3 Plus</code> stays single-sided across 1TB, 2TB, and 4TB; <code>WD_BLACK SN850X</code> stays single-sided at 1TB/2TB for Proxmox/ZFS workloads).</li>
+<li><b>Match cooler thickness to real headroom:</b> Under ~2mm clearance = flexible <b>0.5mm–1mm copper-graphene foil</b> only (<code>IcePC</code> / <code>JEYI</code>). Over ~5mm clearance = slim aluminum block (<code>be quiet! MC1</code> non-Pro).</li>
+<li><b>Never force M.2 standoff screws:</b> Use an exact PH0/PH00 bit so you don't strip a captive mini-PC standoff.</li>
+<li><b>External bottom-plate airflow:</b> If a closed Proxmox cluster runs hot, a silent 120mm USB fan underneath drops NVMe temps more than jamming oversized fins inside.</li>
+</ol>
+<h2>Verified single-sided NVMe, slim cooler &amp; tool BOM</h2>
+<p>Click the exact storage capacity and thickness tier you need — each links directly to its Amazon ASIN. Check Amazon for today's price &amp; clippable coupons before adding to cart.</p>
+{{TABLE:fix_nvme}}
+<p class="complete"><b>Next checks:</b> compare full 1TB–4TB capacities on the <a href="{{ROOT}}deals/nvme-ssd-variant-ladder.html">NVMe SSD variant ladder</a>, reuse your swapped-out M.2 in an <a href="{{ROOT}}deals/nvme-ssd-enclosures-under-30.html">external NVMe enclosure</a>, or check <a href="{{ROOT}}deals/gmktec.html">GMKtec</a> / <a href="{{ROOT}}deals/beelink.html">Beelink deals</a>.</p>
+<p><small>See <a href="{{ROOT}}index.html#fixes">all /fix/ hardware BOMs</a> or <a href="{{ROOT}}index.html#ladders">variant ladders</a>.</small></p>

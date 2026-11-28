@@ -1,0 +1,23 @@
+<!-- {"title": "Fix Proxmox & Linux 2.5GbE USB Ethernet Speed Drops & Driver Fallbacks (BOM) | CheapAss", "description": "Fix 2.5GbE USB adapters capping at ~43MB/s or dropping on Proxmox VE and Linux (cdc_ncm fallback vs native r8152 driver + RTL8156B adapters).", "faq": [["Why did my 2.5GbE USB adapter drop to 40–100MB/s in Proxmox?", "Linux sometimes binds Realtek RTL8156 dongles to the generic cdc_ncm or cdc_ether driver instead of the native r8152 kernel module, or plugs into a USB 2.0 port (~350Mbps ceiling), or thermally throttles plastic dongles under heavy ZFS/iperf3 load."], ["How do I check which driver Proxmox is using?", "Run 'ethtool -i enx<mac>' on your Proxmox host. You want 'driver: r8152'. If it shows 'cdc_ncm' or 'cdc_ether', blacklist the fallback modules and add a udev rule binding 0bda:8156 to r8152."], ["Which chipset is safest for Proxmox 6.8+?", "Realtek RTL8156B / RTL8156BG in an aluminum heatsink housing (Plugable USBC-E2500 or UGREEN Aluminum 2.5GbE) has mature native r8152 support in Proxmox VE Linux 6.8+ kernels."]]} -->
+<h1>Fix Proxmox &amp; Linux 2.5GbE USB Ethernet speed drops</h1>
+<p class="tag">Stuck at 43MB/s or random disconnects? Verify <code>r8152</code>, kill <code>cdc_ncm</code> fallback, and pick cooled RTL8156B silicon.</p>
+<p class="sale">{{SEASON}}</p>
+<p>Adding a second 2.5GbE link to a mini PC running Proxmox VE shouldn't crawl below 1Gbps or drop under ZFS backups. Almost every case boils down to the kernel binding generic <code>cdc_ncm</code> instead of <code>r8152</code>, USB autosuspend, or cheap plastic dongles overheating.</p>
+<h2>60-second Proxmox / Debian diagnostic</h2>
+<pre><code># 1. Confirm you're in a 5Gbps+ USB 3.x port &amp; check active driver (want: r8152)
+lsusb -t
+ethtool -i enx&lt;your-mac&gt;
+
+# 2. If ethtool shows cdc_ncm or cdc_ether, force r8152 on reboot:
+printf "blacklist cdc_ncm\nblacklist cdc_ether\nblacklist r8153_ecm\n" &gt; /etc/modprobe.d/r8152-blacklist.conf
+update-initramfs -u</code></pre>
+<ol>
+<li><b>Avoid non-3.x ports:</b> Plug strictly into a blue/SS USB 3.0+ port (USB 2.0 caps around ~350Mbps).</li>
+<li><b>Disable USB autosuspend</b> for high-throughput VM bridges so Proxmox never sleeps the NIC mid-backup.</li>
+<li><b>Swap overheated plastic off-brand sticks</b> for cooled aluminum RTL8156B units (<code>Plugable USBC-E2500</code> includes an attached USB-A adapter for mini PCs short on USB-C ports).</li>
+</ol>
+<h2>Kernel-proven 2.5GbE adapter &amp; cable BOM</h2>
+<p>All adapters below use RTL8156/B/BG silicon supported natively by Linux 6.8+ <code>r8152</code>. Check Amazon for today's price &amp; clippable coupons before checkout.</p>
+{{TABLE:fix_nic}}
+<p class="complete"><b>Next checks:</b> compare every wired dongle on <a href="{{ROOT}}deals/2-5gbe-usb-ethernet-adapters-under-30.html">2.5GbE adapters under $30</a>, hide the Proxmox host with a <a href="{{ROOT}}deals/hdmi-displayport-dummy-plugs-under-30.html">4K HDMI dummy plug</a>, or check <a href="{{ROOT}}q/mini-pc-for-proxmox.html">mini PCs for Proxmox</a>.</p>
+<p><small>See <a href="{{ROOT}}index.html#fixes">all /fix/ hardware BOMs</a> or <a href="{{ROOT}}index.html#ladders">variant ladders</a>.</small></p>
